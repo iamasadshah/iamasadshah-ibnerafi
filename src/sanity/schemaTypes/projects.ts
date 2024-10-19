@@ -1,8 +1,8 @@
-import { defineField } from "sanity";
+import { defineField, defineType } from "sanity";
 
-export const projects = {
-  name: "project",
-  title: "Project",
+export const projects = defineType({
+  name: "projects",
+  title: "Projects",
   type: "document",
   fields: [
     {
@@ -20,13 +20,13 @@ export const projects = {
       title: "Main Image",
       type: "image",
       options: {
-        hotspot: true, // Allows cropping the image
+        hotspot: true,
       },
     }),
-    defineField({
+    {
       name: "link",
       title: "Project Link",
       type: "url",
-    }),
+    },
   ],
-};
+});

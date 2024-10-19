@@ -2,8 +2,34 @@ import { Card } from "@/components/ui/card";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { client } from "@/sanity/lib/client";
 
-const Projects = () => {
+// Function to fetch data from Sanity
+export async function getData() {
+  const res = await client.fetch(
+    `*[_type=="projects"]{
+      title,
+      description,
+      mainImage,
+      link,
+    }`
+  );
+  return res;
+}
+
+interface Project {
+  title: string;
+  description: string;
+  mainImage: {
+    asset: {
+      url: string;
+    };
+  };
+  link: string;
+}
+
+const Projects = async () => {
+  const projects = await getData();
   return (
     <div
       className="bg-cover bg-center bg-no-repeat py-10 -mt-1"
@@ -22,6 +48,7 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 lg:px-10">
+        {/* map all date from sanity */}
         {/* Example Project Card */}
         <Card className="project-card flex flex-col items-center text-center space-y-3 pb-3 lg:items-start lg:text-start">
           <Image
