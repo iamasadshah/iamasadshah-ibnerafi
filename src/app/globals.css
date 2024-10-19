@@ -2,26 +2,188 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html,
+body {
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* For Chrome, Safari, and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground selection:bg-primary2;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* title zoom in effext */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-zoom-in {
+  animation: zoomIn 2s ease-out forwards;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Typewriter effect */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* typewriter effect */
+.animate-typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: transparent;
+  animation:
+    typewriter 6s steps(40, end) forwards,
+    blink 0.75s step-end infinite;
+}
+
+/* Hero buttons effect */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slideInLeft 1.5s ease-out forwards;
+}
+
+/* Slide in Right effect */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slide-right {
+  animation: slideInRight 1.5s ease-out forwards;
+}
+
+@layer components {
+  .services-card {
+    @apply flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center ring-1 shadow-lg shadow-white ring-gray-600 hover:shadow-lg hover:shadow-black;
+  }
+  .service-heading {
+    @apply text-xl font-bold lg:text-2xl;
+  }
+  .service-image {
+    @apply animate-pulse;
+  }
+  .About {
+    @apply flex flex-col justify-center items-center lg:grid lg:grid-cols-2;
+  }
+  .card-div {
+    @apply flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4;
+  }
+  .cards {
+    @apply rounded-lg py-2 px-4 shadow-sm shadow-primary1;
+  }
+  .project-card {
+    @apply flex flex-col text-center space-y-3 pb-3 lg:text-start;
+  }
+  .project-image {
+    @apply w-full rounded-t-xl;
+  }
+  .project-title {
+    @apply text-lg font-bold px-3 lg:px-6;
+  }
+  .project-description {
+    @apply px-3 lg:px-6;
+  }
+  .project-link {
+    @apply text-primary1 px-3 lg:px-6;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
