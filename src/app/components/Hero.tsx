@@ -49,7 +49,7 @@ const Hero = () => {
           Hello, My Name is Asad Shah.
         </p>
         <h1 className="text-[30px] sm:text-[35px] md:text-[45px] font-semibold leading-9 sm:leading-10 md:leading-[3.5rem] animate-zoom-in">
-          Building websites that work smoothly and look great.
+          Building Web Apps that work smoothly and look great.
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-600 lg:pr-52">
           A web app developer that transforms ideas into fast, user-friendly

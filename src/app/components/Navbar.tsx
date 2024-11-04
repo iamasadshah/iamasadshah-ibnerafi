@@ -25,25 +25,25 @@ const Navbar = () => {
 
           {/* Navigation Links for larger screens */}
           <nav className="hidden md:flex space-x-8 font-semibold">
-            <Link href="#about" className="relative text-gray-900 group">
+            <Link href="/about-me" className="relative text-gray-900 group">
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
-                About Us
+                About Me
               </span>
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary1 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </Link>
-            <Link href="#services" className="relative text-gray-900 group">
+            <Link href="/services" className="relative text-gray-900 group">
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
                 Services
               </span>
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary1 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </Link>
-            <Link href="#projects" className="relative text-gray-900 group">
+            <Link href="/projects" className="relative text-gray-900 group">
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
                 Projects
               </span>
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary1 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </Link>
-            <Link href="#blogs" className="relative text-gray-900 group">
+            <Link href="/blogs" className="relative text-gray-900 group">
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
                 Blogs
               </span>
