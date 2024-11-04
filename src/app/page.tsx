@@ -4,7 +4,6 @@ import Services from "./components/Services";
 import About from "./components/About-me";
 import Projects from "./components/Projects";
 import FAQs from "./components/FAQs";
-import Inspiration from "./components/Inspiration";
 export default function Home() {
   return (
     <>
