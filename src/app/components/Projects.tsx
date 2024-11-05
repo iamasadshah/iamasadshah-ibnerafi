@@ -3,8 +3,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// Function to fetch data from Sanity
-
 const Projects = async () => {
   return (
     <div
@@ -24,8 +22,6 @@ const Projects = async () => {
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 lg:px-10">
-        {/* map all date from sanity */}
-        {/* Example Project Card */}
         <Card className="project-card flex flex-col items-center text-center space-y-3 pb-3 lg:items-start lg:text-start">
           <Image
             src={"/razer-clone.webp"}
