@@ -12,7 +12,7 @@ const Hero = () => {
           alt="particle-one"
           width={300}
           height={300}
-          className="h-20 w-20 hidden lg:block lg:-mb-20 -ml-[400px] animate-spin-slow"
+          className="h-20 w-20 hidden lg:block lg:-mb-20 -ml-[400px] transition-all duration-700 transform translate-y-[100px] delay-2000 ease-out animate-spin-slow lg:translate-y-0"
         />
 
         {/* Hero Image */}
