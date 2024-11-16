@@ -82,7 +82,7 @@ const Navbar = () => {
       >
         <nav className="space-y-4 px-2 pt-2 pb-3">
           {/* Each link has its own animation */}
-          <Link href="/about">
+          <Link href="/about-me">
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "translate-x-0" : "-translate-x-full"
