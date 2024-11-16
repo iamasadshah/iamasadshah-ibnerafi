@@ -82,7 +82,7 @@ const Navbar = () => {
       >
         <nav className="space-y-4 px-2 pt-2 pb-3">
           {/* Each link has its own animation */}
-          <Link href="#about">
+          <Link href="/about">
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "translate-x-0" : "-translate-x-full"
@@ -91,7 +91,7 @@ const Navbar = () => {
               About Us
             </div>
           </Link>
-          <Link href="#services">
+          <Link href="/services">
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "translate-x-0" : "translate-x-full"
@@ -100,7 +100,7 @@ const Navbar = () => {
               Services
             </div>
           </Link>
-          <Link href="#projects">
+          <Link href="/projects">
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "-translate-x-0" : "-translate-x-full"
@@ -109,7 +109,7 @@ const Navbar = () => {
               Projects
             </div>
           </Link>
-          <Link href="#blogs">
+          <Link href="/blogs">
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "translate-x-0" : "translate-x-full"
@@ -125,7 +125,7 @@ const Navbar = () => {
           }`}
         >
           {/* Hire Me with fade-in effect */}
-          <Link href="#contact">
+          <Link href="/contact">
             <div className="block w-full text-center py-2 px-4 rounded-md bg-primary1 text-white cursor-pointer">
               Hire Me
             </div>
