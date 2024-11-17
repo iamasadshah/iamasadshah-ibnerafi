@@ -11,20 +11,21 @@ const About = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="max-w-4xl w-full bg-white shadow-lg rounded-lg p-6 md:p-10"
+        className="max-w-4xl w-full bg-white shadow-lg rounded-lg shadow-primary2 p-6 md:p-10"
       >
         <div className="text-center">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1, type: "spring", stiffness: 100 }}
+            className="rounded-full w-40 h-40 overflow-hidden mx-auto border-4 border-primary1 "
           >
             <Image
               src="/iamasadshah.png"
               alt="Profile Picture"
               width={150}
               height={150}
-              className="rounded-full mx-auto border-4 border-primary1"
+              className="object-cover w-full h-full mt-2"
             />
           </motion.div>
           <h1 className="text-3xl font-bold text-gray-800 mt-4">Asad Shah</h1>
@@ -76,7 +77,7 @@ const About = () => {
             "TypeScript",
             "Tailwind CSS",
             "Sanity.io",
-            "REST APIs",
+            "Vercel",
             "Git & GitHub",
           ].map((skill) => (
             <motion.span

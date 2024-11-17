@@ -53,7 +53,7 @@ const Navbar = () => {
 
           {/* Hire Me Button for larger screens */}
           <div className="hidden md:block">
-            <Link href="#contact">
+            <Link href="/contact">
               <div className="relative inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm shadow-sm font-medium rounded-md shadow-gray-500 text-white bg-primary1 transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:text-primary1">
                 <span className="transition-transform duration-300 ease-in-out transform hover:rotate-360">
                   Hire Me

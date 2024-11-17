@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 import React from "react";
 
@@ -84,7 +85,7 @@ const FAQs = () => {
           Contact us for more information.
         </p>
         <button className="bg-primary1 transition-all duration-300 font-semibold hover:bg-gray-300 hover:text-primary1 hover:ring-2 hover:ring-primary1 hover:scale-105 text-white px-4 py-2 rounded-md">
-          Contact Us
+          <Link href="/contact">Contact Us</Link>
         </button>
       </div>
     </div>

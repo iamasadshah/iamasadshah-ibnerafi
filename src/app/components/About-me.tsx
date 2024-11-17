@@ -52,7 +52,7 @@ const About = () => {
 
         {/* Button Section */}
         <button className="flex items-center px-6 py-2 justify-center text-center border border-transparent text-sm shadow-md font-medium rounded-md text-white bg-primary1 transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-500 md:text-lg md:px-10 lg:px-7">
-          <Link href="#">About me</Link>
+          <Link href="/about-me">About me</Link>
         </button>
       </div>
     </div>
