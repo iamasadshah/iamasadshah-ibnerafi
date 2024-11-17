@@ -25,7 +25,7 @@ const About = () => {
               alt="Profile Picture"
               width={150}
               height={150}
-              className="object-cover w-full h-full mt-2"
+              className="object-cover w-full h-full"
             />
           </motion.div>
           <h1 className="text-3xl font-bold text-gray-800 mt-4">Asad Shah</h1>

@@ -22,13 +22,13 @@ const Projects = async () => {
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 lg:px-10">
-        <Card className="project-card flex flex-col items-center text-center space-y-3 pb-3 lg:items-start lg:text-start">
+        <Card className="project-card flex flex-col  items-center text-center space-y-3 pb-3 lg:items-start lg:text-start">
           <Image
             src={"/razer-clone.webp"}
             alt="project one"
             width={300}
             height={300}
-            className="w-full rounded-t-xl transition-transform transform  hover:saturate-150 duration-300"
+            className="w-full rounded-t-xl transition-transform filter grayscale hover:grayscale-0 transform  hover:saturate-150 duration-300"
           />
           <h1 className="text-lg lg:text-xl font-bold project-title">
             Razer clone
@@ -41,6 +41,7 @@ const Projects = async () => {
           </p>
           <Link
             href={"https://razer-clone-gold.vercel.app"}
+            rel="noopener noreferrer"
             className="text-primary1 px-3 lg:px-6"
           >
             View Project &rarr;
@@ -53,7 +54,7 @@ const Projects = async () => {
             alt="project one"
             width={300}
             height={300}
-            className="w-full rounded-t-xl transition-transform transform  hover:saturate-150 duration-300"
+            className="w-full rounded-t-xl transition-transform transform filter grayscale hover:grayscale-0 hover:saturate-150 duration-300"
           />
           <h1 className="project-title text-lg lg:text-xl font-bold">
             Clock App
@@ -65,6 +66,7 @@ const Projects = async () => {
           </p>
           <Link
             href={"https://simple-clock-react.vercel.app/"}
+            rel="noopener noreferrer"
             className="text-primary1 px-3 lg:px-6"
           >
             View Project &rarr;
@@ -77,7 +79,7 @@ const Projects = async () => {
             alt="project one"
             width={300}
             height={300}
-            className="w-full rounded-t-xl transition-transform transform  hover:saturate-150 duration-300"
+            className="w-full rounded-t-xl transition-transform transform filter grayscale hover:grayscale-0 hover:saturate-150 duration-300"
           />
           <h1 className="project-title text-lg lg:text-xl font-bold">
             Dine Market
@@ -90,6 +92,7 @@ const Projects = async () => {
           </p>
           <Link
             href={"https://piaic-q2-project.vercel.app"}
+            rel="noopener noreferrer"
             className="text-primary1 px-3 lg:px-6"
           >
             View Project &rarr;
@@ -102,7 +105,7 @@ const Projects = async () => {
             alt="project one"
             width={300}
             height={300}
-            className="w-full rounded-t-xl transition-transform transform  hover:saturate-150 duration-300"
+            className="w-full rounded-t-xl transition-transform transform filter grayscale hover:grayscale-0 hover:saturate-150 duration-300"
           />
           <h1 className="project-title text-lg lg:text-xl font-bold">
             To do App
@@ -114,6 +117,7 @@ const Projects = async () => {
           </p>
           <Link
             href={"https://todo-app-ebon-gamma.vercel.app/"}
+            rel="noopener noreferrer"
             className="text-primary1 px-3 lg:px-6"
           >
             View Project &rarr;

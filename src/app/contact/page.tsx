@@ -9,16 +9,20 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e: any) => {
+  // Typed handleChange function
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: any) => {
+  // Typed handleSubmit function
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { name, email, message } = formData;
 
-    const mailtoLink = `mailto:your-email@example.com?subject=Contact from ${name}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:asadibnerafi@gmail.com?subject=Contact from ${name}&body=${encodeURIComponent(
       message
     )} (Email: ${email})`;
 
