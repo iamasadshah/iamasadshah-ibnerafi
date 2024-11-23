@@ -18,7 +18,7 @@ const Services = () => {
     if (servicesRef.current) {
       const cards = Array.from(servicesRef.current.children) as HTMLElement[];
 
-      cards.forEach((card, index) => {
+      cards.forEach((card) => {
         gsap.fromTo(
           card,
           { opacity: 0, y: 50 }, // Start slightly below and hidden
