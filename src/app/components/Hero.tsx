@@ -123,11 +123,11 @@ const Hero = () => {
       >
         <p className="text-lg sm:text-xl">Hello, My Name is Asad Shah.</p>
         <h1 className="text-[30px] sm:text-[35px] md:text-[45px] font-semibold leading-9 sm:leading-10 md:leading-[3.5rem]">
-          Building Web Apps that work smoothly and look great.
+          I&apos;m a Professional Software Developer.
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-600 lg:pr-52">
-          A web app developer that transforms ideas into fast, user-friendly
-          apps designed to stand out.
+          Who said coding can&apos;t be fun? <br /> Let&apos;s build something
+          awesome!
         </p>
 
         <div

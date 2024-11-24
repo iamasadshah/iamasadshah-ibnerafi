@@ -43,7 +43,12 @@ const Navbar = () => {
               </span>
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary1 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </Link>
-            <Link href="/blogs" className="relative text-gray-900 group">
+            <Link
+              href="https://medium.com/@iamasadshah"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative text-gray-900 group"
+            >
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
                 Blogs
               </span>
@@ -109,7 +114,11 @@ const Navbar = () => {
               Projects
             </div>
           </Link>
-          <Link href="/blogs">
+          <Link
+            href="https://medium.com/@iamasadshah"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "translate-x-0" : "translate-x-full"
