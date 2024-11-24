@@ -162,23 +162,23 @@ html::-webkit-scrollbar {
 }
 
 .snake-animation .animate-snake {
-  animation: snake-wave 2s ease-in-out infinite;
+  animation: snake-wave 20s ease-in-out infinite;
 }
 
 .snake-animation .animate-snake.delay-100 {
-  animation-delay: 0.2s;
-}
-
-.snake-animation .animate-snake.delay-200 {
   animation-delay: 0.4s;
 }
 
+.snake-animation .animate-snake.delay-200 {
+  animation-delay: 1.6s;
+}
+
 .snake-animation .animate-snake.delay-300 {
-  animation-delay: 0.6s;
+  animation-delay: 2.4s;
 }
 
 .snake-animation .animate-snake.delay-400 {
-  animation-delay: 0.8s;
+  animation-delay: 3.2s;
 }
 
 @layer components {

@@ -10,13 +10,13 @@ const Navbar = () => {
   return (
     <header>
       {/* Navbar container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-primary2 ">
         <div className="flex justify-between items-center py-4">
           {/* Logo Section */}
           <div className="flex-shrink-0">
             <Link href="/">
               <div className="flex items-center cursor-pointer">
-                <span className="ml-2 text-4xl font-bold text-primary1">
+                <span className="ml-2 text-4xl font-bold text-white">
                   ibneRafi.
                 </span>
               </div>
@@ -29,19 +29,16 @@ const Navbar = () => {
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
                 About Me
               </span>
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary1 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </Link>
             <Link href="/services" className="relative text-gray-900 group">
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
                 Services
               </span>
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary1 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </Link>
             <Link href="/projects" className="relative text-gray-900 group">
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
                 Projects
               </span>
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary1 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </Link>
             <Link
               href="https://medium.com/@iamasadshah"
@@ -52,15 +49,14 @@ const Navbar = () => {
               <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
                 Blogs
               </span>
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary1 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </Link>
           </nav>
 
           {/* Hire Me Button for larger screens */}
           <div className="hidden md:block">
             <Link href="/contact">
-              <div className="relative inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm shadow-sm font-medium rounded-md shadow-gray-500 text-white bg-primary1 transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:text-primary1">
-                <span className="transition-transform duration-300 ease-in-out transform hover:rotate-360">
+              <div className="relative inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm shadow-sm font-medium rounded-md shadow-gray-500 text-white bg-primary1 transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:ring-2 hover:ring-black">
+                <span className="transition-transform duration-300 ease-in-out transform hover:rotate-360 hover:text-black">
                   Hire Me
                 </span>
               </div>
@@ -81,7 +77,7 @@ const Navbar = () => {
 
       {/* Mobile Menu with sliding from button to top */}
       <div
-        className={`md:hidden transition-all duration-700 ease-in-out overflow-hidden ${
+        className={`md:hidden transition-all duration-700 ease-in-out overflow-hidden bg-primary2 ${
           menuOpen ? "max-h-screen" : "max-h-0"
         }`}
       >

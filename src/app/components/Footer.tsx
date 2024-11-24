@@ -1,6 +1,4 @@
 import React from "react";
-import { FaGithub, FaHackerrank, FaMedium, FaLinkedin } from "react-icons/fa";
-import { FaUpwork } from "react-icons/fa6";
 import Link from "next/link";
 
 const Footer = () => {
@@ -32,50 +30,11 @@ const Footer = () => {
         >
           Contact
         </Link>
-      </div>
 
-      {/* Social Icons */}
-      <div className="flex space-x-4 lg:space-x-6 snake-animation">
-        <Link
-          href="https://github.com/iamasadshah"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-gray-800 hover:bg-primary transition duration-500"
-        >
-          <FaGithub size={24} className="animate-snake" />
-        </Link>
-        <Link
-          href="https://www.hackerrank.com/profile/asadibnerafi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-gray-800 hover:bg-primary transition duration-500"
-        >
-          <FaHackerrank size={24} className="animate-snake delay-100" />
-        </Link>
-        <Link
-          href="https://www.upwork.com/freelancers/~0151539c3fe76e8c72?mp_source=share"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-gray-800 hover:bg-primary transition duration-500"
-        >
-          <FaUpwork size={24} className="animate-snake delay-200" />
-        </Link>
-        <Link
-          href="https://medium.com/@ibnerafi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-gray-800 hover:bg-primary transition duration-500"
-        >
-          <FaMedium size={24} className="animate-snake delay-300" />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/iamasadshah/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-gray-800 hover:bg-primary transition duration-500"
-        >
-          <FaLinkedin size={24} className="animate-snake delay-400" />
-        </Link>
+        <div className="flex space-x-16 text-black">
+          <Link href={"/"}>★ Star</Link>
+          <Link href={"/"}>⑂ Fork</Link>
+        </div>
       </div>
     </footer>
   );

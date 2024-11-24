@@ -51,12 +51,7 @@ const About = () => {
   }, []);
 
   return (
-    <div
-      className="py-6 px-4 lg:px-10 About bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('/second-bg.svg')", // Replace with your image path
-      }}
-    >
+    <div className="py-6 px-4 lg:px-10 About bg-cover bg-primary2 bg-center bg-no-repeat">
       {/* About Me Image */}
       <div
         ref={imageRef}
