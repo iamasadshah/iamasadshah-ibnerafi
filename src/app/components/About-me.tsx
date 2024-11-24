@@ -1,8 +1,55 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  const imageRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (imageRef.current && textRef.current) {
+      // Image Animation
+      gsap.fromTo(
+        imageRef.current,
+        { opacity: 0, x: -100 }, // Start: invisible, shifted left
+        {
+          opacity: 1,
+          x: 0, // End: visible, original position
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: imageRef.current,
+            start: "top 90%", // Starts when the top of the image is 90% down the viewport
+            end: "top 20%", // Ends when the top of the image is 20% from the top
+            scrub: true, // Tie animation progress to scroll
+          },
+        }
+      );
+
+      // Text Animation
+      gsap.fromTo(
+        textRef.current,
+        { opacity: 0, x: 100 }, // Start: invisible, shifted right
+        {
+          opacity: 1,
+          x: 0, // End: visible, original position
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: textRef.current,
+            start: "top 90%", // Starts when the top of the text is 90% down the viewport
+            end: "top 20%", // Ends when the top of the text is 20% from the top
+            scrub: true, // Tie animation progress to scroll
+          },
+        }
+      );
+    }
+  }, []);
+
   return (
     <div
       className="py-6 px-4 lg:px-10 About bg-cover bg-center bg-no-repeat"
@@ -11,7 +58,10 @@ const About = () => {
       }}
     >
       {/* About Me Image */}
-      <div className="about-me-image flex justify-center lg:justify-start lg:w-full lg:pr-8">
+      <div
+        ref={imageRef}
+        className="about-me-image flex justify-center lg:justify-start lg:w-full lg:pr-8"
+      >
         <Image
           src={"/asadshah.jpg"}
           alt="asad-shah"
@@ -22,7 +72,10 @@ const About = () => {
       </div>
 
       {/* Text Section */}
-      <div className="text-div text-center lg:text-start py-2 lg:py-4 flex flex-col space-y-2 lg:space-y-4 lg:items-start">
+      <div
+        ref={textRef}
+        className="text-div text-center lg:text-start py-2 lg:py-4 flex flex-col space-y-2 lg:space-y-4 lg:items-start"
+      >
         <p className="text-xl font-semibold">About me</p>
         <h3 className="text-2xl lg:text-4xl">
           Who is responsible for all of this impressive effort?

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -5,8 +6,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
-
-import React from "react";
 
 const FAQs = () => {
   return (
@@ -24,7 +23,8 @@ const FAQs = () => {
         Services.
       </p>
 
-      <Accordion type="single" className="w-full max-w-md">
+      {/* Accordion with 'collapsible' property */}
+      <Accordion type="single" collapsible className="w-full max-w-md">
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-md md:text-lg lg:text-xl">
             What services do you offer?
@@ -51,7 +51,7 @@ const FAQs = () => {
             How can I contact you for a project?
           </AccordionTrigger>
           <AccordionContent>
-            You can reach out through the contact form on the website
+            You can reach out through the contact form on the website.
           </AccordionContent>
         </AccordionItem>
 
