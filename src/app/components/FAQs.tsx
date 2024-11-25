@@ -15,7 +15,7 @@ const FAQs = () => {
         backgroundImage: "url('/second-bg.svg')", // Replace with your image path
       }}
     >
-      <h1 className="text-4xl font-bold text-center">
+      <h1 className="text-4xl font-bold text-center text-primary3">
         Frequently Asked Questions
       </h1>
       <p className="text-lg text-center">
