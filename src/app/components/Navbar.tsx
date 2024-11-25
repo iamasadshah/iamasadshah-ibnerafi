@@ -16,7 +16,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <div className="flex items-center cursor-pointer">
-                <span className="ml-2 text-4xl font-bold text-white">
+                <span className="ml-2 text-4xl font-bold text-primary3">
                   ibneRafi.
                 </span>
               </div>
@@ -26,17 +26,17 @@ const Navbar = () => {
           {/* Navigation Links for larger screens */}
           <nav className="hidden md:flex space-x-8 font-semibold">
             <Link href="/about-me" className="relative text-gray-900 group">
-              <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
+              <span className="transition-colors duration-300 ease-in-out hover:text-primary3">
                 About Me
               </span>
             </Link>
             <Link href="/services" className="relative text-gray-900 group">
-              <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
+              <span className="transition-colors duration-300 ease-in-out hover:text-primary3">
                 Services
               </span>
             </Link>
             <Link href="/projects" className="relative text-gray-900 group">
-              <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
+              <span className="transition-colors duration-300 ease-in-out hover:text-primary3">
                 Projects
               </span>
             </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="relative text-gray-900 group"
             >
-              <span className="transition-colors duration-300 ease-in-out hover:text-primary1">
+              <span className="transition-colors duration-300 ease-in-out hover:text-primary3">
                 Blogs
               </span>
             </Link>
@@ -55,8 +55,8 @@ const Navbar = () => {
           {/* Hire Me Button for larger screens */}
           <div className="hidden md:block">
             <Link href="/contact">
-              <div className="relative inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm shadow-sm font-medium rounded-md shadow-gray-500 text-white bg-primary1 transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:ring-2 hover:ring-black">
-                <span className="transition-transform duration-300 ease-in-out transform hover:rotate-360 hover:text-black">
+              <div className="relative inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm shadow-sm font-medium rounded-md shadow-gray-500 text-primary2 bg-primary3 transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:ring-2 hover:ring-primary3">
+                <span className="transition-transform duration-300 ease-in-out transform hover:rotate-360 hover:text-primary3">
                   Hire Me
                 </span>
               </div>

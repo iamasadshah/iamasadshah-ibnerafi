@@ -39,20 +39,20 @@ const Hero = () => {
       );
     }
 
-    // Hero Image Zoom and Rotate
+    // Hero Image animation on scroll
     if (heroImageRef.current) {
       gsap.fromTo(
         heroImageRef.current,
-        { scale: 1.2, rotation: 10 },
+        { opacity: 1, y: 0 },
         {
-          scale: 1,
-          rotation: 0,
-          duration: 2,
-          ease: "power3.out",
+          opacity: 0,
+          y: 50,
+          duration: 0.5,
+          ease: "power2.out",
           scrollTrigger: {
-            trigger: heroImageRef.current,
-            start: "top 80%",
-            end: "top 40%",
+            trigger: buttonsRef.current,
+            start: "top center",
+            end: "bottom top",
             scrub: true,
           },
         }
@@ -134,14 +134,14 @@ const Hero = () => {
         </p>
 
         {/* Social Icons */}
-        <div className="flex space-x-4 lg:space-x-6 snake-animation">
+        <div className="flex space-x-4 lg:space-x-6 snake-animation pt-6">
           <Link
             href="https://github.com/iamasadshah"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-primary1 hover:bg-white transition duration-500"
           >
-            <FaGithub size={24} className="animate-snake" />
+            <FaGithub size={30} className="animate-snake" />
           </Link>
           <Link
             href="https://www.hackerrank.com/profile/asadibnerafi"
@@ -149,7 +149,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-primary1 hover:bg-[#08EB68] transition duration-500"
           >
-            <FaHackerrank size={24} className="animate-snake delay-100" />
+            <FaHackerrank size={30} className="animate-snake delay-100" />
           </Link>
           <Link
             href="https://www.upwork.com/freelancers/~0151539c3fe76e8c72?mp_source=share"
@@ -157,7 +157,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-primary1 hover:bg-[#14A800] transition duration-500"
           >
-            <FaUpwork size={24} className="animate-snake delay-200" />
+            <FaUpwork size={30} className="animate-snake delay-200" />
           </Link>
           <Link
             href="https://medium.com/@ibnerafi"
@@ -166,7 +166,7 @@ const Hero = () => {
             className="p-2 rounded-full bg-primary1 hover:bg-[#080808] transition duration-500"
           >
             <FaMedium
-              size={24}
+              size={30}
               className="animate-snake delay-300 hover:text-white"
             />
           </Link>
@@ -177,7 +177,7 @@ const Hero = () => {
             className="p-2 rounded-full bg-primary1 hover:bg-[#0A66C2] transition duration-500"
           >
             <FaLinkedin
-              size={24}
+              size={30}
               className="animate-snake delay-400 hover:text-white"
             />
           </Link>
@@ -185,16 +185,22 @@ const Hero = () => {
 
         <div
           ref={buttonsRef}
-          className="flex justify-center items-center space-x-4 mt-4 lg:justify-start"
+          className="flex justify-center items-center space-x-4 mt-4 lg:justify-start pt-6"
         >
           {/* Hire Me Button */}
-          <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-white bg-primary1 hover:bg-transparent cursor-pointer transition-all duration-300 hover:text-primary1 hover:ring-2 hover:ring-primary1 md:text-lg md:px-10 lg:px-7">
+          <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-white bg-primary1 hover:bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-2 hover:ring-primary3 md:text-lg md:px-10 lg:px-7">
             <a href="">Contact me</a>
           </button>
 
           {/* Portfolio Button */}
-          <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent hover:bg-primary1 cursor-pointer transition-all duration-300 hover:text-white ring-2 ring-primary1 md:text-lg md:px-10 lg:px-7">
-            <a href="#">Get Resume</a>
+          <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-primary3 ring-2 ring-primary1 md:text-lg md:px-10 lg:px-7">
+            <a
+              href="#"
+              className="relative inline-flex items-center text-lg text-black hover:text-blue-600"
+            >
+              Get Resume
+              <span className="ml-2 inline-block animate-bounce-slow">📥</span>
+            </a>
           </button>
         </div>
       </div>
