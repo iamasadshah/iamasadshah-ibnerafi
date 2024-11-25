@@ -58,7 +58,7 @@ const About = () => {
         className="about-me-image flex justify-center lg:justify-start lg:w-full lg:pr-8"
       >
         <Image
-          src={"/asadshah.jpg"}
+          src={"/asadshah.gif"}
           alt="asad-shah"
           width={300}
           height={300}
