@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <header>
       {/* Navbar container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-primary2 ">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 bg-primary2 ">
         <div className="flex justify-between items-center py-4">
           {/* Logo Section */}
           <div className="flex-shrink-0">
