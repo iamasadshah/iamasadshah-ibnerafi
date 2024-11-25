@@ -13,7 +13,7 @@ const Projects = async () => {
     >
       <div className="flex flex-col space-y-3 py-10 px-4 lg:px-10">
         <p className="text-center text-sm font-bold">Projects</p>
-        <h1 className="text-center text-3xl lg:text-4xl font-bold ">
+        <h1 className="text-center text-3xl lg:text-4xl font-bold text-primary3">
           Discover My Success Stories
         </h1>
         <p className="text-center text-sm">
