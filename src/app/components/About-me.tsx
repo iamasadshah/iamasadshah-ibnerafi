@@ -71,7 +71,7 @@ const About = () => {
         ref={textRef}
         className="text-div text-center lg:text-start py-2 lg:py-4 flex flex-col space-y-2 lg:space-y-4 lg:items-start"
       >
-        <p className="text-xl font-semibold">About me</p>
+        <p className="text-xl font-semibold text-primary3">About me</p>
         <h3 className="text-2xl lg:text-4xl">
           Who is responsible for all of this impressive effort?
         </h3>
@@ -83,7 +83,7 @@ const About = () => {
         </p>
 
         {/* Cards Section */}
-        <div className="card-div text-primary1 flex flex-col lg:flex-row lg:space-x-2">
+        <div className="card-div flex flex-col lg:flex-row lg:space-x-4 text-primary3">
           <div className="cards">
             <h4 className="text-xl font-bold">100+</h4>
             <p>Project completed</p>

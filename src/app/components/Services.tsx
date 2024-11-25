@@ -81,7 +81,7 @@ const Services = () => {
     >
       <h1
         ref={headerRef}
-        className="text-2xl lg:text-3xl font-semibold text-center px-4"
+        className="text-2xl lg:text-3xl font-semibold text-center px-4 text-primary3"
       >
         Take a look at the variety of services I offer.
       </h1>

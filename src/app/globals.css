@@ -198,7 +198,7 @@ html::-webkit-scrollbar {
     @apply flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4;
   }
   .cards {
-    @apply rounded-lg py-2 px-4 shadow-sm shadow-primary1;
+    @apply rounded-lg py-2 px-4 shadow-md shadow-primary3;
   }
   .project-card {
     @apply flex flex-col text-center space-y-3 pb-3 lg:text-start;
