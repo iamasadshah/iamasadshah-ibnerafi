@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import FAQs from "./components/FAQs";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import Skills from "./components/Skills";
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
         <Services />
         <About />
         <Projects />
+        <Skills />
         <FAQs />
         <Footer />
       </Wrapper>

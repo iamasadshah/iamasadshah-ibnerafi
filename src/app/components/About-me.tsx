@@ -71,16 +71,17 @@ const About = () => {
         ref={textRef}
         className="text-div text-center lg:text-start py-2 lg:py-4 flex flex-col space-y-2 lg:space-y-4 lg:items-start"
       >
-        <p className="text-xl font-semibold text-primary3">About me</p>
+        <p className="text-xl font-semibold text-primary3">WHO AM I?</p>
         <div>
-          <h3 className="text-2xl lg:text-4xl">
-            Who is responsible for all of this impressive effort?
-          </h3>
-          <p className="text-sm lg:text-base">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Recusandae, sit? Perferendis eveniet consectetur dicta alias ipsam
-            dignissimos error illum dolor iure ducimus numquam nihil cumque a,
-            unde ipsa voluptates enim similique repellat. Nisi, veritatis ipsam?
+          <p className="text-sm lg:text-lg">
+            Hi, I&apos;m Asad Shah Ibne Rafi, a passionate and dedicated
+            developer. I enjoy learning and growing every day, especially when
+            it comes to exploring new technologies. Problem-solving excites me,
+            and I love creating web applications that make the internet more
+            open and accessible. My journey is driven by self-learning and
+            curiosity. TypeScript is my core skill, and I enjoy building most of
+            my projects with it. I&apos;m always open to opportunities that
+            match my skills and interests, so feel free to reach out!
           </p>
         </div>
 
