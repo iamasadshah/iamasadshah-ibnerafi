@@ -125,7 +125,7 @@ const Projects = async () => {
         </Card>
       </div>
 
-      <div className="flex justify-center items-center mt-8">
+      <div className="flex justify-center items-center ">
         <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-semibold rounded-md shadow-gray-500 text-white bg-primary3 hover:bg-transparent cursor-pointer transition-all duration-300 hover:text-primary1 hover:ring-2 hover:ring-primary1 md:text-lg md:px-10 lg:px-7">
           <Link href="#">Check the full Portfolio</Link>
         </button>
