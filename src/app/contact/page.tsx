@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-primary2 flex flex-col items-center justify-center px-4 py-8">
       {/* Header Section */}
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
@@ -47,7 +47,7 @@ const Contact = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
         onSubmit={handleSubmit}
-        className="bg-white shadow-lg rounded-lg p-6 w-full max-w-2xl"
+        className="bg-primary1 shadow-lg shadow-primary3 rounded-lg p-6 w-full max-w-2xl"
       >
         {/* Name Input */}
         <motion.div
@@ -56,10 +56,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="mb-4"
         >
-          <label
-            htmlFor="name"
-            className="block text-gray-700 font-medium mb-2"
-          >
+          <label htmlFor="name" className="block  text-white font-medium mb-2">
             Your Name
           </label>
           <input
@@ -70,7 +67,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="Enter your name"
-            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary1"
+            className="w-full p-3 bg-primary2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white placeholder:text-white"
           />
         </motion.div>
 
@@ -81,10 +78,7 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-4"
         >
-          <label
-            htmlFor="email"
-            className="block text-gray-700 font-medium mb-2"
-          >
+          <label htmlFor="email" className="block text-white font-medium mb-2">
             Your Email
           </label>
           <input
@@ -95,7 +89,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="Enter your email"
-            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary1"
+            className="w-full p-3 bg-primary2 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white placeholder:text-white"
           />
         </motion.div>
 
@@ -108,7 +102,7 @@ const Contact = () => {
         >
           <label
             htmlFor="message"
-            className="block text-gray-700 font-medium mb-2"
+            className="block text-white font-medium mb-2"
           >
             Your Message
           </label>
@@ -120,15 +114,15 @@ const Contact = () => {
             required
             rows={5}
             placeholder="Enter your message"
-            className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary1"
+            className="w-full p-3 bg-primary2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white placeholder:text-white"
           ></textarea>
         </motion.div>
 
         {/* Submit Button */}
         <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-full bg-primary1 text-white py-3 rounded-lg font-medium shadow-md hover:bg-primary2 focus:outline-none focus:ring-2 focus:ring-primary1"
+          whileHover={{ scale: 0.9 }}
+          whileTap={{ scale: 0.8 }}
+          className="w-full bg-primary1 text-white py-3 ring-2 ring-primary2 rounded-full font-medium shadow-md shadow-primary2 hover:shadow-primary3 hover:bg-primary2 focus:outline-none focus:ring-2 focus:ring-primary1"
           type="submit"
         >
           Send Message
