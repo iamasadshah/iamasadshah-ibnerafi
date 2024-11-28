@@ -45,9 +45,9 @@ const Hero = () => {
         heroImageRef.current,
         { opacity: 1, y: 0 },
         {
-          opacity: 0,
-          y: 50,
-          duration: 0.5,
+          opacity: 1,
+          y: 150,
+          duration: 0.7,
           ease: "power2.out",
           scrollTrigger: {
             trigger: buttonsRef.current,
@@ -83,6 +83,7 @@ const Hero = () => {
     if (bgRef.current) {
       gsap.to(bgRef.current, {
         y: 100,
+        opacity: 1,
         ease: "power1.out",
         scrollTrigger: {
           trigger: bgRef.current,
