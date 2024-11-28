@@ -24,7 +24,7 @@ const Contact = () => {
 
     const mailtoLink = `mailto:asadibnerafi@gmail.com?subject=Contact from ${name}&body=${encodeURIComponent(
       message
-    )} (Email: ${email})`;
+    )} (\n \n Message From: ${email})`;
 
     window.location.href = mailtoLink;
   };

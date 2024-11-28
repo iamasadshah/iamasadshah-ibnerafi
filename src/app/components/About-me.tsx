@@ -59,6 +59,7 @@ const About = () => {
       >
         <Image
           src={"/asadshah.gif"}
+          unoptimized
           alt="asad-shah"
           width={300}
           height={300}

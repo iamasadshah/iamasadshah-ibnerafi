@@ -41,6 +41,7 @@ const Projects = async () => {
           </p>
           <Link
             href={"https://razer-clone-gold.vercel.app"}
+            target="_blank"
             rel="noopener noreferrer"
             className="text-primary1 px-3 lg:px-6"
           >
@@ -66,6 +67,7 @@ const Projects = async () => {
           </p>
           <Link
             href={"https://simple-clock-react.vercel.app/"}
+            target="_blank"
             rel="noopener noreferrer"
             className="text-primary1 px-3 lg:px-6"
           >
@@ -92,6 +94,7 @@ const Projects = async () => {
           </p>
           <Link
             href={"https://piaic-q2-project.vercel.app"}
+            target="_blank"
             rel="noopener noreferrer"
             className="text-primary1 px-3 lg:px-6"
           >
@@ -117,6 +120,7 @@ const Projects = async () => {
           </p>
           <Link
             href={"https://todo-app-ebon-gamma.vercel.app/"}
+            target="_blank"
             rel="noopener noreferrer"
             className="text-primary1 px-3 lg:px-6"
           >

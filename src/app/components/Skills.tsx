@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
 const skills = [
@@ -80,7 +81,9 @@ const Skills = () => {
             className="flex flex-col items-center justify-center bg-gradient-to-r from-primary3 to-blue-600 rounded-lg p-6 transition-transform duration-300 ease-in-out transform hover:scale-110"
           >
             <div className="w-20 h-20 flex justify-center items-center  ">
-              <img
+              <Image
+                width={100}
+                height={100}
                 src={skill.image}
                 alt={skill.name}
                 className="w-16 h-16 object-contain"
@@ -96,7 +99,9 @@ const Skills = () => {
             className="flex flex-col items-center justify-center bg-gradient-to-r from-primary3 to-blue-600 rounded-lg p-6 transition-transform duration-300 ease-in-out transform hover:scale-110"
           >
             <div className="w-20 h-20 flex justify-center items-center">
-              <img
+              <Image
+                width={100}
+                height={100}
                 src={skill.image}
                 alt={skill.name}
                 className="w-16 h-16 object-contain"
