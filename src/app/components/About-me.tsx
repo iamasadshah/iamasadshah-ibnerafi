@@ -74,7 +74,7 @@ const About = () => {
       >
         <p className="text-xl font-semibold text-primary3">WHO AM I?</p>
         <div>
-          <p className="text-sm lg:text-lg">
+          <p className="text-sm lg:text-lg font-semibold">
             Hi, I&apos;m Asad Shah Ibne Rafi, a passionate and dedicated
             developer. I enjoy learning and growing every day, especially when
             it comes to exploring new technologies. Problem-solving excites me,
@@ -84,6 +84,11 @@ const About = () => {
             my projects with it. I&apos;m always open to opportunities that
             match my skills and interests, so feel free to reach out!
           </p>
+          <b>
+            <i>
+              I&apos;ll retire when the last bug is fixed—so, probably never.
+            </i>
+          </b>
         </div>
 
         {/* Cards Section */}

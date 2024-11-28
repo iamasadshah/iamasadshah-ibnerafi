@@ -107,8 +107,7 @@ html::-webkit-scrollbar {
   overflow: hidden;
   white-space: nowrap;
   border-right: transparent;
-  animation:
-    typewriter 6s steps(40, end) forwards,
+  animation: typewriter 6s steps(40, end) forwards,
     blink 0.75s step-end infinite;
 }
 

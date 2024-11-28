@@ -7,6 +7,7 @@ import FAQs from "./components/FAQs";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Skills from "./components/Skills";
+
 export default function Home() {
   return (
     <>

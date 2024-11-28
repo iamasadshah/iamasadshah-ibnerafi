@@ -83,7 +83,7 @@ const Hero = () => {
     if (bgRef.current) {
       gsap.to(bgRef.current, {
         y: 100,
-        opacity: 1,
+        opacity: 0.7,
         ease: "power1.out",
         scrollTrigger: {
           trigger: bgRef.current,
@@ -93,6 +93,7 @@ const Hero = () => {
         },
       });
     }
+    // Cleanup on unmount
   }, []);
 
   return (

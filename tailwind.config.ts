@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const config: Config = {
 	darkMode: ["class"],
 	content: [
@@ -9,6 +11,10 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+				fugaz: ['Fugaz One', 'cursive'], // Add custom font
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
