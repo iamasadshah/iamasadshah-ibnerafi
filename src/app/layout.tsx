@@ -16,7 +16,16 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "ibnerafi",
-  description: "personal portfolio of asadshah",
+  description: "Personal Portfolio of asadshah",
+  keywords: [
+    "ibnerafi",
+    "asadshah",
+    "asadullah",
+    "syed asadshah",
+    "syedasadshah",
+    "asadshah portfolio",
+    "asadibnerafi",
+  ],
   icons: {
     icon: "/favicon.png",
   },
