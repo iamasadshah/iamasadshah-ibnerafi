@@ -3,9 +3,15 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-primary2 py-5">
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <h1 className="text-center font-bold text-primary3 text-4xl">
+          FROM VISION TO CREATION!
+        </h1>
+        <p className="text-center font-semibold text-lg text-primary3">
+          See How Ideas Transform into Impactful Creations.
+        </p>
+        <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
@@ -24,8 +30,8 @@ const page = () => {
                     Project 1
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Praesentium eum magni voluptatibus voluptatum saepe ut.
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <a className="text-primary3 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer">
@@ -64,8 +70,8 @@ const page = () => {
                     Project 2
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia laudantium dolorem excepturi maiores aut laboriosam.
                   </p>
                   <div className="flex items-center flex-wrap">
                     <a className="text-primary3 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer">
@@ -104,8 +110,8 @@ const page = () => {
                     Project 3
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fuga reiciendis labore, vel nostrum quod laudantium.
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <a className="text-primary3 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer">
