@@ -107,10 +107,10 @@ const Hero = () => {
           alt="Hero-Image"
           height={400}
           width={400}
-          className="object-contain mt-8 z-10 w-[200px] h-[300px] sm:w-[300px] sm:h-[400px] md:w-[400px] md:h-[600px] lg:w-full lg:h-[600px] lg:-mb-7"
+          className="object-contain z-10 w-[300px] h-[500px] sm:w-[300px] sm:h-[400px] md:w-[500px] md:h-[600px] lg:w-full lg:h-[500px] lg:-mt-14 shadow-lg shadow-primary1 rounded-full"
         />
 
-        {/* Background Image */}
+        {/* Background Image
         <Image
           ref={bgRef}
           src="/background.png"
@@ -118,7 +118,7 @@ const Hero = () => {
           width={1000}
           height={1000}
           className="absolute z-0 object-contain w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-full lg:h-full background-image"
-        />
+        /> */}
       </div>
 
       {/* Text Section */}
