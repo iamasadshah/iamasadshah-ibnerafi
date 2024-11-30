@@ -7,10 +7,15 @@ import { RiMenu3Fill } from "react-icons/ri";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Function to handle link click and close menu
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Close the menu
+  };
+
   return (
     <header>
       {/* Navbar container */}
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 bg-primary2 ">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 bg-primary2">
         <div className="flex justify-between items-center py-4">
           {/* Logo Section */}
           <div className="flex-shrink-0">
@@ -64,7 +69,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden ">
+          <div className="md:hidden">
             <button
               className="text-gray-900 focus:outline-none"
               onClick={() => setMenuOpen(!menuOpen)} // Toggle menu state
@@ -75,7 +80,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu with sliding from button to top */}
+      {/* Mobile Menu with sliding from bottom to top */}
       <div
         className={`md:hidden transition-all duration-700 ease-in-out overflow-hidden bg-primary2 ${
           menuOpen ? "max-h-screen" : "max-h-0"
@@ -83,7 +88,7 @@ const Navbar = () => {
       >
         <nav className="space-y-4 px-2 pt-2 pb-3">
           {/* Each link has its own animation */}
-          <Link href="/about-me">
+          <Link href="/about-me" onClick={handleLinkClick}>
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "translate-x-0" : "-translate-x-full"
@@ -92,7 +97,7 @@ const Navbar = () => {
               About Us
             </div>
           </Link>
-          <Link href="/services">
+          <Link href="/services" onClick={handleLinkClick}>
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "translate-x-0" : "translate-x-full"
@@ -101,7 +106,7 @@ const Navbar = () => {
               Services
             </div>
           </Link>
-          <Link href="/projects">
+          <Link href="/projects" onClick={handleLinkClick}>
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
                 menuOpen ? "-translate-x-0" : "-translate-x-full"
@@ -114,6 +119,7 @@ const Navbar = () => {
             href="https://medium.com/@iamasadshah"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleLinkClick}
           >
             <div
               className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
@@ -130,7 +136,7 @@ const Navbar = () => {
           }`}
         >
           {/* Hire Me with fade-in effect */}
-          <Link href="/contact">
+          <Link href="/contact" onClick={handleLinkClick}>
             <div className="block w-full text-center py-2 px-4 rounded-md bg-primary1 text-white cursor-pointer">
               Hire Me
             </div>

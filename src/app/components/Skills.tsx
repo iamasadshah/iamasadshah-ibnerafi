@@ -13,7 +13,7 @@ const skills = [
   { name: "React", image: "/skills/react.webp" },
   { name: "Nextjs", image: "/skills/nextjs.png" },
   { name: "Sanity", image: "/skills/sanity.png" },
-  { name: "Shadn", image: "/skills/shadcn.png" },
+  { name: "Shadcn", image: "/skills/shadcn.png" },
   { name: "Git", image: "/skills/git.png" },
   { name: "Figma", image: "/skills/figma.png" },
 ];
