@@ -1,4 +1,3 @@
-import { Card } from "@/components/ui/card";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +18,9 @@ const Projects = async () => {
           <div className="flex flex-wrap -mx-4 -mb-10 text-center">
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-64 overflow-hidden">
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   alt="content"
                   className="object-cover object-center h-full w-full filter grayscale hover:grayscale-0 hover:saturate-150 transition duration-300"
                   src="/razer-clone.jpg"
@@ -46,7 +47,9 @@ const Projects = async () => {
             </div>
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-64 overflow-hidden">
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   alt="content"
                   className="object-cover object-center h-full w-full filter grayscale hover:grayscale-0 hover:saturate-150 transition duration-300"
                   src="/Dine-Market.webp"
@@ -73,7 +76,9 @@ const Projects = async () => {
             </div>
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-64 overflow-hidden">
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   alt="content"
                   className="object-cover object-center h-full w-full filter grayscale hover:grayscale-0 hover:saturate-150 transition duration-300"
                   src="/netflix-clone.png"
@@ -100,7 +105,9 @@ const Projects = async () => {
             </div>
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-64 overflow-hidden">
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   alt="content"
                   className="object-cover object-center h-full w-full filter grayscale hover:grayscale-0 hover:saturate-150 transition duration-300"
                   src="/Real-time.webp"
