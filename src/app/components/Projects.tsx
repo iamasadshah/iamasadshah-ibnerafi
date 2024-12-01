@@ -28,9 +28,11 @@ const Projects = async () => {
               <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
                 Razer Clone
               </h2>
-              <p className="leading-relaxed text-base">
-                Williamsburg occupy sustainable snackwave gochujang. Pinterest
-                cornhole brunch, slow-carb neutra irony.
+              <h2 className="text-md font-bold text-gray-800 mb-2">
+                Tech Stack Used:
+              </h2>
+              <p className="text-gray-700">
+                HTML, CSS, JavaScript, React, Next.js, TypeScript, and more...
               </p>
               <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
                 <Link
@@ -53,9 +55,11 @@ const Projects = async () => {
               <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
                 Dine Market
               </h2>
-              <p className="leading-relaxed text-base">
-                Williamsburg occupy sustainable snackwave gochujang. Pinterest
-                cornhole brunch, slow-carb neutra irony.
+              <h2 className="text-md font-bold text-gray-800 mb-2">
+                Tech Stack Used:
+              </h2>
+              <p className="text-gray-700">
+                HTML, CSS, JavaScript, React, Next.js, TypeScript, and more...
               </p>
               <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
                 <Link
@@ -78,9 +82,11 @@ const Projects = async () => {
               <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
                 Netflix Clone
               </h2>
-              <p className="leading-relaxed text-base">
-                Williamsburg occupy sustainable snackwave gochujang. Pinterest
-                cornhole brunch, slow-carb neutra irony.
+              <h2 className="text-md font-bold text-gray-800 mb-2">
+                Tech Stack Used:
+              </h2>
+              <p className="text-gray-700">
+                HTML, CSS, JavaScript, React, Next.js, TypeScript, and more...
               </p>
               <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
                 <Link
@@ -103,9 +109,11 @@ const Projects = async () => {
               <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
                 Digital Clock
               </h2>
-              <p className="leading-relaxed text-base">
-                Williamsburg occupy sustainable snackwave gochujang. Pinterest
-                cornhole brunch, slow-carb neutra irony.
+              <h2 className="text-md font-bold text-gray-800 mb-2">
+                Tech Stack Used:
+              </h2>
+              <p className="text-gray-700">
+                HTML, CSS, JavaScript, React, Next.js, TypeScript, and more...
               </p>
               <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
                 <Link
