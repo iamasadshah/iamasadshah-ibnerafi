@@ -11,129 +11,115 @@ const Projects = async () => {
         backgroundImage: "url('/first-bg.svg')", // Replace with your image path
       }}
     >
-      <div className="flex flex-col space-y-3 py-10 px-4 lg:px-10">
-        <p className="text-center text-sm font-bold">Projects</p>
-        <h1 className="text-center text-3xl lg:text-4xl font-bold text-primary3">
-          Discover My Success Stories
-        </h1>
-        <p className="text-center text-sm">
-          Explore My curated collection of successful projects.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 lg:px-10">
-        <Card className="project-card flex flex-col  items-center text-center space-y-3 pb-3 lg:items-start lg:text-start">
-          <Image
-            src={"/razer-clone.webp"}
-            alt="project one"
-            width={300}
-            height={300}
-            className="w-full rounded-t-xl transition-transform filter grayscale hover:grayscale-0 transform  hover:saturate-150 duration-300"
-          />
-          <h1 className="text-lg lg:text-xl font-bold project-title">
-            Razer clone
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <h1 className="text-center font-bold text-4xl text-primary3 pb-10">
+            Projects
           </h1>
-          <p className="px-3 lg:px-6 text-sm lg:text-base">
-            I built a Razer clone using{" "}
-            <b>Next.js, Tailwind CSS, and ShadCN,</b> replicating the design
-            with responsive layouts and polished UI components for a smooth user
-            experience.
-          </p>
-          <Link
-            href={"https://razer-clone-gold.vercel.app"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary1 px-3 lg:px-6"
-          >
-            View Project &rarr;
-          </Link>
-        </Card>
-
-        <Card className="project-card flex flex-col items-center text-center space-y-3 pb-3 lg:items-start lg:text-start">
-          <Image
-            src={"/Real-time.webp"}
-            alt="project one"
-            width={300}
-            height={300}
-            className="w-full rounded-t-xl transition-transform transform filter grayscale hover:grayscale-0 hover:saturate-150 duration-300"
-          />
-          <h1 className="project-title text-lg lg:text-xl font-bold">
-            Clock App
-          </h1>
-          <p className="px-3 lg:px-6 text-sm lg:text-base">
-            I created a Clock App project while learning at <b>React</b>, using{" "}
-            <b>react.js, HTML5, CSS3, and JavaScript</b>. It features a dynamic,
-            responsive design with real-time content.
-          </p>
-          <Link
-            href={"https://simple-clock-react.vercel.app/"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary1 px-3 lg:px-6"
-          >
-            View Project &rarr;
-          </Link>
-        </Card>
-
-        <Card className="project-card flex flex-col items-center text-center space-y-3 pb-3 lg:items-start lg:text-start">
-          <Image
-            src={"/Dine-Market.webp"}
-            alt="project one"
-            width={300}
-            height={300}
-            className="w-full rounded-t-xl transition-transform transform filter grayscale hover:grayscale-0 hover:saturate-150 duration-300"
-          />
-          <h1 className="project-title text-lg lg:text-xl font-bold">
-            Dine Market
-          </h1>
-          <p className="px-3 lg:px-6 text-sm lg:text-base">
-            I created a Dine Market project while learning at <b>PIAIC</b>,
-            using <b>Next.js, Tailwind CSS, ShadCN, Sanity, and PostgreSQL</b>.
-            It features a dynamic, responsive design with real-time content
-            management and a smooth user experience.
-          </p>
-          <Link
-            href={"https://piaic-q2-project.vercel.app"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary1 px-3 lg:px-6"
-          >
-            View Project &rarr;
-          </Link>
-        </Card>
-
-        <Card className="project-card flex flex-col items-center text-center space-y-3 pb-3 lg:items-start lg:text-start">
-          <Image
-            src={"/To-do-app.webp"}
-            alt="project one"
-            width={300}
-            height={300}
-            className="w-full rounded-t-xl transition-transform transform filter grayscale hover:grayscale-0 hover:saturate-150 duration-300"
-          />
-          <h1 className="project-title text-lg lg:text-xl font-bold">
-            To do App
-          </h1>
-          <p className="px-3 lg:px-6 text-sm lg:text-base">
-            I created a To-do App project while learning at <b>React</b>, using{" "}
-            <b>react.js, HTML5, CSS3, and JavaScript</b>. It features a dynamic,
-            responsive design with real-time content.
-          </p>
-          <Link
-            href={"https://todo-app-ebon-gamma.vercel.app/"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary1 px-3 lg:px-6"
-          >
-            View Project &rarr;
-          </Link>
-        </Card>
-      </div>
-
-      <div className="flex justify-center items-center ">
-        <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-semibold rounded-md shadow-gray-500 text-white bg-primary3 hover:bg-transparent cursor-pointer transition-all duration-300 hover:text-primary1 hover:ring-2 hover:ring-primary1 md:text-lg md:px-10 lg:px-7 mt-5">
-          <Link href="#">Check the full Portfolio</Link>
-        </button>
-      </div>
+          <div className="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  className="object-cover object-center h-full w-full filter grayscale hover:grayscale-0 hover:saturate-150 transition duration-300"
+                  src="/razer-clone.jpg"
+                />
+              </div>
+              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+                Razer Clone
+              </h2>
+              <p className="leading-relaxed text-base">
+                Williamsburg occupy sustainable snackwave gochujang. Pinterest
+                cornhole brunch, slow-carb neutra irony.
+              </p>
+              <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+                <Link
+                  href={"https://razer-clone-gold.vercel.app"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project &rarr;
+                </Link>
+              </button>
+            </div>
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  className="object-cover object-center h-full w-full filter grayscale hover:grayscale-0 hover:saturate-150 transition duration-300"
+                  src="/Dine-Market.webp"
+                />
+              </div>
+              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+                Dine Market
+              </h2>
+              <p className="leading-relaxed text-base">
+                Williamsburg occupy sustainable snackwave gochujang. Pinterest
+                cornhole brunch, slow-carb neutra irony.
+              </p>
+              <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+                <Link
+                  href={"https://piaic-q2-project.vercel.app/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project &rarr;
+                </Link>
+              </button>
+            </div>
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  className="object-cover object-center h-full w-full filter grayscale hover:grayscale-0 hover:saturate-150 transition duration-300"
+                  src="/netflix-clone.png"
+                />
+              </div>
+              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+                Netflix Clone
+              </h2>
+              <p className="leading-relaxed text-base">
+                Williamsburg occupy sustainable snackwave gochujang. Pinterest
+                cornhole brunch, slow-carb neutra irony.
+              </p>
+              <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+                <Link
+                  href={"https://netflix-clone-frontend-ten.vercel.app/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project &rarr;
+                </Link>
+              </button>
+            </div>
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  className="object-cover object-center h-full w-full filter grayscale hover:grayscale-0 hover:saturate-150 transition duration-300"
+                  src="/Real-time.webp"
+                />
+              </div>
+              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+                Digital Clock
+              </h2>
+              <p className="leading-relaxed text-base">
+                Williamsburg occupy sustainable snackwave gochujang. Pinterest
+                cornhole brunch, slow-carb neutra irony.
+              </p>
+              <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+                <Link
+                  href={"https://simple-clock-react.vercel.app/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project &rarr;
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -93,20 +93,6 @@ const Services = () => {
         {/* Service Cards */}
         <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center">
           <Image
-            alt="UI/UX Design"
-            src="/ux-design.png"
-            width={80}
-            height={80}
-            className="hover:scale-110 transition-transform duration-300"
-          />
-          <h3 className="text-lg lg:text-xl font-bold">UI/UX Design</h3>
-          <p className="text-sm lg:text-base">
-            Ensuring websites and apps work smoothly on all devices.
-          </p>
-        </Card>
-
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center">
-          <Image
             alt="Frontend Development"
             src="/development.png"
             width={80}
@@ -119,6 +105,22 @@ const Services = () => {
             like React and Next.js.
           </p>
         </Card>
+        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center">
+          <Image
+            alt="UI/UX Design"
+            src="/wordpress.png"
+            width={80}
+            height={80}
+            className="hover:scale-110 transition-transform duration-300"
+          />
+          <h3 className="text-lg lg:text-xl font-bold">
+            Wordpress Development
+          </h3>
+          <p className="text-sm lg:text-base">
+            Creating custom WordPress websites that are fast, secure, and easy
+            to manage.
+          </p>
+        </Card>
 
         <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center">
           <Image
@@ -129,7 +131,7 @@ const Services = () => {
             className="hover:scale-110 transition-transform duration-300"
           />
           <h3 className="text-lg lg:text-xl font-bold">
-            Single Page Applications (SPAs)
+            Single Page Applications
           </h3>
           <p className="text-sm lg:text-base">
             Fast, dynamic SPAs providing seamless user experiences without
