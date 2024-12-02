@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="flex flex-col lg:flex-row items-center justify-between bg-primary2 text-white py-6 px-10 -mt-2">
       {/* Pages Links */}
       <div>
-        <p className="text-black">
+        <p className="text-black text-center">
           Made with Code and Creativity by Asad Shah.
         </p>
       </div>
