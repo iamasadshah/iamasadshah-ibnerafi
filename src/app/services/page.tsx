@@ -31,7 +31,7 @@ const servicesList = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4 pb-10 ">
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4 pb-10 py-20">
       {/* Header Section */}
       <motion.section
         initial={{ opacity: 0, y: -50 }}

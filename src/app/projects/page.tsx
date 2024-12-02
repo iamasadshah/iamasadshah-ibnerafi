@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="bg-primary2 py-5">
+    <div className="bg-primary2 py-20">
       <section className="text-gray-600 body-font">
         <h1 className="text-center font-bold text-primary3 text-4xl">
           FROM VISION TO CREATION!
