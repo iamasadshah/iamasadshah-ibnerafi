@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Pages Links */}
       <div>
         <p className="text-black text-center">
-          Made with Code and Creativity by Asad Shah.
+          Made with Code and Creativity By Asad Shah.
         </p>
       </div>
       <div className="flex space-x-16 text-black">
