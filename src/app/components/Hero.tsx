@@ -86,7 +86,7 @@ const Hero = () => {
   return (
     <div className="lg:flex lg:pr-6 h-screen Hero-container bg-primary2 relative overflow-hidden md:h-[1050px] lg:h-screen">
       {/* Image Section */}
-      <div className="Image-Div flex flex-col justify-center items-center px-4 relative h-[50vh] lg:h-full lg:basis-[60%] order-first lg:order-last py-36 mt-10 md:py-16">
+      <div className="Image-Div flex flex-col justify-center items-center px-4 relative h-[50vh] lg:h-full lg:basis-[60%] order-first lg:order-last pt-10 py-36 mt-10 md:py-16 ">
         {/* Hero Image */}
         <Image
           ref={heroImageRef}
