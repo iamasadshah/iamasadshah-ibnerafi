@@ -13,7 +13,6 @@ const Hero = () => {
   const textRef = useRef<HTMLDivElement>(null);
   const heroImageRef = useRef<HTMLImageElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
-  const bgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     // Text Animation on Scroll
