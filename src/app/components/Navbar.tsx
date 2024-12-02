@@ -1,21 +1,38 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiX } from "react-icons/fi";
 import { RiMenu3Fill } from "react-icons/ri";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  // Function to handle link click and close menu
+  // Handle scroll to toggle background blur
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleLinkClick = () => {
-    setMenuOpen(false); // Close the menu
+    setMenuOpen(false);
   };
 
   return (
-    <header>
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "backdrop-blur-md bg-white/50 shadow-md" : "bg-primary2"
+      }`}
+    >
       {/* Navbar container */}
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 bg-primary2">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo Section */}
           <div className="flex-shrink-0">
@@ -69,10 +86,10 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden ">
             <button
               className="text-gray-900 focus:outline-none"
-              onClick={() => setMenuOpen(!menuOpen)} // Toggle menu state
+              onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? <FiX size={28} /> : <RiMenu3Fill size={28} />}
             </button>
@@ -80,38 +97,25 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu with sliding from bottom to top */}
+      {/* Mobile Menu */}
       <div
         className={`md:hidden transition-all duration-700 ease-in-out overflow-hidden bg-primary2 ${
-          menuOpen ? "max-h-screen" : "max-h-0"
+          menuOpen ? "max-h-screen " : "max-h-0"
         }`}
       >
         <nav className="space-y-4 px-2 pt-2 pb-3">
-          {/* Each link has its own animation */}
           <Link href="/about-me" onClick={handleLinkClick}>
-            <div
-              className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
-                menuOpen ? "translate-x-0" : "-translate-x-full"
-              }`}
-            >
-              About Us
+            <div className="block text-gray-900 hover:text-primary1">
+              About Me
             </div>
           </Link>
           <Link href="/services" onClick={handleLinkClick}>
-            <div
-              className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
-                menuOpen ? "translate-x-0" : "translate-x-full"
-              }`}
-            >
+            <div className="block text-gray-900 hover:text-primary1">
               Services
             </div>
           </Link>
           <Link href="/projects" onClick={handleLinkClick}>
-            <div
-              className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
-                menuOpen ? "-translate-x-0" : "-translate-x-full"
-              }`}
-            >
+            <div className="block text-gray-900 hover:text-primary1">
               Projects
             </div>
           </Link>
@@ -121,21 +125,10 @@ const Navbar = () => {
             rel="noopener noreferrer"
             onClick={handleLinkClick}
           >
-            <div
-              className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
-                menuOpen ? "translate-x-0" : "translate-x-full"
-              }`}
-            >
-              Blogs
-            </div>
+            <div className="block text-gray-900 hover:text-primary1">Blogs</div>
           </Link>
         </nav>
-        <div
-          className={`px-2 pb-3 transition duration-700 ${
-            menuOpen ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          {/* Hire Me with fade-in effect */}
+        <div className="px-2 pb-3">
           <Link href="/contact" onClick={handleLinkClick}>
             <div className="block w-full text-center py-2 px-4 rounded-md bg-primary1 text-white cursor-pointer">
               Hire Me

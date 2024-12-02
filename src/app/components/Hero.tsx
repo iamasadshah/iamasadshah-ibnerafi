@@ -46,7 +46,7 @@ const Hero = () => {
         { opacity: 1, y: 0 },
         {
           opacity: 1,
-          y: 150,
+          x: 500,
           duration: 0.7,
           ease: "power2.out",
           scrollTrigger: {
@@ -66,8 +66,8 @@ const Hero = () => {
         { opacity: 1, y: 0 },
         {
           opacity: 0,
-          y: 50,
-          duration: 0.5,
+          y: 150,
+          duration: 3.5,
           ease: "power2.out",
           scrollTrigger: {
             trigger: buttonsRef.current,
@@ -80,19 +80,7 @@ const Hero = () => {
     }
 
     // Parallax Scrolling Effect for Background
-    if (bgRef.current) {
-      gsap.to(bgRef.current, {
-        y: 100,
-        opacity: 0.7,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: bgRef.current,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
-    }
+
     // Cleanup on unmount
   }, []);
 
@@ -107,24 +95,14 @@ const Hero = () => {
           alt="Hero-Image"
           height={400}
           width={400}
-          className="object-contain z-10 w-[300px] h-[500px] sm:w-[300px] sm:h-[400px] md:w-[500px] md:h-[600px] lg:w-full lg:h-[500px] lg:-mt-14 shadow-lg shadow-primary1 rounded-full"
+          className="object-contain z-10 w-[300px] h-[500px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px]  lg:w-[450px] lg:h-[450px] shadow-lg mt-14 shadow-primary1 rounded-full"
         />
-
-        {/* Background Image
-        <Image
-          ref={bgRef}
-          src="/background.png"
-          alt="Background-Image"
-          width={1000}
-          height={1000}
-          className="absolute z-0 object-contain w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-full lg:h-full background-image"
-        /> */}
       </div>
 
       {/* Text Section */}
       <div
         ref={textRef}
-        className="flex flex-col justify-center md:-mt-16 md:pl-14 px-4 h-[50vh] lg:h-full leading-[2.5rem] lg:leading-[3.5rem]"
+        className="flex flex-col justify-center  md:pl-14 px-4 h-[50vh] lg:h-full leading-[2.5rem] lg:leading-[3.5rem]"
       >
         <p className="text-lg sm:text-xl">Hello, My Name is Asad Shah.</p>
         <h1 className="text-[30px] sm:text-[35px] md:text-[45px] font-semibold leading-9 sm:leading-10 md:leading-[3.5rem]">

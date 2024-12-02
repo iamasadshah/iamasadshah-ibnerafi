@@ -58,7 +58,7 @@ const Services = () => {
           {
             opacity: 0,
             x: index === 0 ? -999 : 999, // Move left for the first button, right for the second
-            duration: 1.5,
+            duration: 3.5,
             ease: "power2.inOut",
             scrollTrigger: {
               trigger: button,
@@ -160,11 +160,11 @@ const Services = () => {
         className="flex justify-center items-center space-x-4 mt-8"
       >
         <button className="flex items-center px-6 py-2 border-2 border-transparent text-sm font-medium rounded-md text-white bg-primary1 transition-transform duration-300 hover:ring-2 hover:ring-primary1 hover:scale-110 hover:bg-transparent md:text-lg md:px-10 lg:px-7 hover:text-primary1">
-          <a href="#">Hire me</a>
+          <a href="/contact">Hire me</a>
         </button>
 
         <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent hover:scale-110 transition-transform duration-300 hover:bg-primary1 hover:text-white ring-2 ring-primary1 md:text-lg md:px-10 lg:px-7">
-          <a href="#">Portfolio</a>
+          <a href="/projects">Portfolio</a>
         </button>
       </div>
     </div>

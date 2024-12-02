@@ -8,25 +8,25 @@ const Footer = () => {
       {/* Pages Links */}
       <div className="flex space-x-6 mb-4 lg:mb-0 lg:space-x-10">
         <Link
-          href="#about"
+          href="/about-me"
           className="text-sm lg:text-lg hover:text-primary transition duration-300"
         >
           About
         </Link>
         <Link
-          href="#services"
+          href="/services"
           className="text-sm lg:text-lg hover:text-primary transition duration-300"
         >
           Services
         </Link>
         <Link
-          href="#portfolio"
+          href="/projects"
           className="text-sm lg:text-lg hover:text-primary transition duration-300"
         >
           Portfolio
         </Link>
         <Link
-          href="#contact"
+          href="/contact"
           className="text-sm lg:text-lg hover:text-primary transition duration-300"
         >
           Contact
