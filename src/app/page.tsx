@@ -7,10 +7,12 @@ import FAQs from "./components/FAQs";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Skills from "./components/Skills";
+import CustomCursor from "./components/Customcursor";
 
 export default function Home() {
   return (
     <>
+      <CustomCursor />
       <Wrapper>
         <Hero />
         <Services />

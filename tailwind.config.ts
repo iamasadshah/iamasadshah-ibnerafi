@@ -78,7 +78,8 @@ const config: Config = {
 				'spin-slow': 'spin 8s linear infinite',
 				'bounce-slow': 'bounce 3s infinite',
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -92,7 +93,7 @@ const config: Config = {
 					},
 					to: {
 						height: 'var(--radix-accordion-content-height)'
-					}
+					},
 				},
 				'accordion-up': {
 					from: {

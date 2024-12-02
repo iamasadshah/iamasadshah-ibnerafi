@@ -168,18 +168,18 @@ const Hero = () => {
         >
           {/* Hire Me Button */}
           <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-white bg-primary1 hover:bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-2 hover:ring-primary3 md:text-lg md:px-10 lg:px-7">
-            <a href="/contact">Contact me</a>
+            <Link href="/contact">Contact me</Link>
           </button>
 
           {/* Portfolio Button */}
           <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-primary3 ring-2 ring-primary1 md:text-lg md:px-10 lg:px-7">
-            <a
+            <Link
               href="#"
               className="relative inline-flex items-center text-lg text-black hover:text-blue-600"
             >
               Get Resume
               <span className="ml-2 inline-block animate-bounce-slow">📥</span>
-            </a>
+            </Link>
           </button>
         </div>
       </div>

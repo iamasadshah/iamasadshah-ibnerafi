@@ -65,7 +65,7 @@ const Skills = () => {
   return (
     <div className="relative pb-44 overflow-hidden bg-gray-100">
       <h2 className="text-center text-3xl font-bold text-primary1 my-3">
-        Skills
+        I Work With...
       </h2>
       <div
         ref={containerRef}
