@@ -15,9 +15,9 @@ export default function Home() {
       <CustomCursor />
       <Wrapper>
         <Hero />
-        <Services />
         <About />
         <Projects />
+        <Services />
         <Skills />
         <FAQs />
         <Footer />

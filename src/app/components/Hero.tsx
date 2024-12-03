@@ -65,8 +65,8 @@ const Hero = () => {
         { opacity: 1, y: 0 },
         {
           opacity: 0,
-          y: 150,
-          duration: 3.5,
+          x: -299,
+          duration: 9.5,
           ease: "power2.out",
           scrollTrigger: {
             trigger: buttonsRef.current,
@@ -77,10 +77,6 @@ const Hero = () => {
         }
       );
     }
-
-    // Parallax Scrolling Effect for Background
-
-    // Cleanup on unmount
   }, []);
 
   return (

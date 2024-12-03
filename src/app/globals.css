@@ -182,7 +182,7 @@ html::-webkit-scrollbar {
 
 @layer components {
   .services-card {
-    @apply flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center ring-1 shadow-lg shadow-white ring-gray-600 hover:shadow-lg hover:shadow-primary1;
+    @apply flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center ring-1 shadow-lg shadow-white ring-black hover:shadow-xl hover:shadow-primary1 hover:ring-2 hover:bg-primary1 hover:text-white transition duration-700;
   }
   .service-heading {
     @apply text-xl font-bold lg:text-2xl;
