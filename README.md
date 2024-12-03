@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **My Portfolio Website**
 
-## Getting Started
+This is a modern, fully responsive portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS**. The site showcases my skills, projects, and services in a professional and interactive way. It features dynamic animations, custom cursors, and a seamless navigation experience tailored for both desktop and mobile users.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## **Features**
+
+- **Modern Design**: Sleek, minimalistic design with dynamic animations for better engagement.
+- **Fully Responsive**: Optimized for all screen sizes, including mobile, tablet, and desktop.
+- **Custom Cursor**: Star trail animation follows the cursor for an interactive experience.
+- **Mobile-Friendly Navbar**: Mobile navigation menu that auto-hides after clicking.
+- **Dynamic Routing**: Smooth page transitions using Next.js' dynamic routing.
+- **Reusable Components**: Modularized and reusable components for better scalability.
+- **Optimized Performance**: Tailored for fast load times and SEO using Next.js.
+
+---
+
+## **Tech Stack**
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **Icons**: React Icons
+- **Animations**: GSAP (GreenSock Animation Platform)
+- **Version Control**: Git and GitHub
+
+---
+
+## **Project Structure**
+
+```plaintext
+.
+├── components/       # Reusable React components
+│   ├── Navbar.tsx    # Responsive Navbar
+│   ├── CustomCursor.tsx  # Star-trail animated cursor
+├── pages/            # Next.js page routes
+│   ├── index.tsx     # Homepage
+│   ├── about-me.tsx  # About Me page
+│   ├── services.tsx  # Services page
+│   ├── projects.tsx  # Projects showcase page
+│   ├── contact.tsx   # Contact form page
+├── public/           # Static assets (images, icons)
+├── styles/           # Global styles or Tailwind configurations
+├── README.md         # Documentation for the project
+└── package.json      # Project dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **Setup Instructions**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Prerequisites**
+- Node.js >= 16.x
+- npm or yarn package manager
+- Git installed on your machine
 
-## Learn More
+### **Installation**
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open the app in your browser at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## **Available Scripts**
+
+- **`npm run dev`**: Runs the app in development mode.
+- **`npm run build`**: Builds the app for production.
+- **`npm run start`**: Starts the production build.
+
+---
+
+## **Future Enhancements**
+
+- Add content management via Sanity or another CMS.
+- Improve animations and transitions using advanced GSAP techniques.
+- Add unit tests for components using Jest and React Testing Library.
+- Deploy the project on platforms like Vercel or Netlify.
+
+---
+
+## **Screenshots**
+
+![Homepage](path-to-screenshot-homepage.png)
+![Mobile Navbar](path-to-screenshot-navbar.png)
+
+---
+
+## **Contributing**
+
+Contributions are welcome! If you have suggestions or issues, feel free to open an issue or create a pull request.
+
+---
+
+## **License**
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## **Contact**
+
+For any questions or feedback, feel free to reach out:
+
+- LinkedIn: (https://www.linkedin.com/in/iamasadshah/)
