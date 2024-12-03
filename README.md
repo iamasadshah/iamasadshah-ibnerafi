@@ -42,9 +42,8 @@ This is a modern, fully responsive portfolio website built with **Next.js**, **T
 ├── styles/           # Global styles or Tailwind configurations
 ├── README.md         # Documentation for the project
 └── package.json      # Project dependencies and scripts
-```
 
----
+```
 
 ## **Setup Instructions**
 
@@ -58,9 +57,8 @@ This is a modern, fully responsive portfolio website built with **Next.js**, **T
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
-   ```
+   git clone https://github.com/iamasadshah/iamasadshah-ibnerafi.git
+   cd iamasadshah-ibnerafi
 
 2. Install dependencies:
 
@@ -101,8 +99,13 @@ This is a modern, fully responsive portfolio website built with **Next.js**, **T
 
 ## **Screenshots**
 
-![Homepage](path-to-screenshot-homepage.png)
-![Mobile Navbar](path-to-screenshot-navbar.png)
+<div align="center">
+  <h3>🌟 Laptop View</h3>
+  <img src="public/screenshot/laptop.png" alt="Laptop View" width="75%" style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+  
+  <h3>🌟 Mobile View</h3>
+  <img src="public/screenshot/mobile.png" alt="Mobile View" width="40%" style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+</div>
 
 ---
 
@@ -122,4 +125,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any questions or feedback, feel free to reach out:
 
-- LinkedIn: (https://www.linkedin.com/in/iamasadshah/)
+- LinkedIn: [iamasadshah](https://www.linkedin.com/in/iamasadshah/)
