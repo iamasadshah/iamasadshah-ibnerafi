@@ -1,6 +1,5 @@
 "use client";
 import { Card } from "@/components/ui/card";
-import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
