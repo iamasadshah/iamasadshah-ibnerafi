@@ -9,14 +9,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
   return (
-    <div className="py-4 lg:py-10 bg-slate-100 justify-center items-center lg:space-y-12 bg-cover bg-center bg-no-repeat">
+    <div className="py-4 lg:py-10 bg-slate-100 justify-center items-center lg:space-y-12 bg-cover bg-center bg-no-repeat z-10">
       <h1 className="text-2xl lg:text-3xl font-semibold text-center px-4 text-primary3">
         Take a look at the variety of services I offer.
       </h1>
 
       <div className="grid grid-cols-1 px-4 gap-4 mt-4 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         {/* Service Cards */}
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center">
+        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="Frontend Development"
             src="/development.png"
@@ -30,7 +30,7 @@ const Services = () => {
             like React and Next.js.
           </p>
         </Card>
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center">
+        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="UI/UX Design"
             src="/wordpress.png"
@@ -47,7 +47,7 @@ const Services = () => {
           </p>
         </Card>
 
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center">
+        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="SPAs"
             src="/SPA.png"
@@ -64,7 +64,7 @@ const Services = () => {
           </p>
         </Card>
 
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center">
+        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="SEO Optimization"
             src="/seo.png"

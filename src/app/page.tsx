@@ -8,12 +8,14 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Skills from "./components/Skills";
 import CustomCursor from "./components/Customcursor";
+import BackgroundEffect from "./components/BackgroundEffect";
 
 export default function Home() {
   return (
     <>
-      <CustomCursor />
       <Wrapper>
+        <CustomCursor />
+        <BackgroundEffect />
         <Hero />
         <About />
         <Projects />
