@@ -21,7 +21,7 @@ const LineEffect = () => {
 
     const particles: { x: number; y: number; vx: number; vy: number }[] = [];
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 50; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -87,7 +87,7 @@ const LineEffect = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-40 z-0"
+      className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-60 z-0"
     ></canvas>
   );
 };

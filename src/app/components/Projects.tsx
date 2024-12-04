@@ -5,7 +5,7 @@ import Link from "next/link";
 const Projects = async () => {
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat py-10 -mt-1"
+      className="bg-cover bg-center bg-no-repeat py-10 -mt-1 "
       style={{
         backgroundImage: "url('/first-bg.svg')", // Replace with your image path
       }}
@@ -15,7 +15,7 @@ const Projects = async () => {
           <h1 className="text-center font-bold text-4xl text-primary3 pb-10">
             Projects
           </h1>
-          <div className="flex flex-wrap -mx-4 -mb-10 text-center">
+          <div className="flex flex-wrap -mx-4 -mb-10 text-center ">
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Image
