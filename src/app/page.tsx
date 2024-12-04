@@ -9,10 +9,17 @@ import Wrapper from "./components/Wrapper";
 import Skills from "./components/Skills";
 import CustomCursor from "./components/Customcursor";
 import BackgroundEffect from "./components/BackgroundEffect";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <Wrapper>
         <CustomCursor />
         <BackgroundEffect />
