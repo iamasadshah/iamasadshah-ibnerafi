@@ -16,7 +16,7 @@ const Projects = async () => {
             Projects
           </h1>
           <div className="flex flex-wrap -mx-4 -mb-10 text-center ">
-            <div className="sm:w-1/2 mb-10 px-4">
+            <div className="sm:w-1/2 mb-10 px-4 z-10">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Image
                   width={500}
@@ -45,7 +45,7 @@ const Projects = async () => {
                 </Link>
               </button>
             </div>
-            <div className="sm:w-1/2 mb-10 px-4">
+            <div className="sm:w-1/2 mb-10 px-4 z-10">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Image
                   width={500}
@@ -65,7 +65,7 @@ const Projects = async () => {
                 HTML, TailwindCSS, React, Next.js, TypeScript, Sanity and
                 more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary3 rounded">
+              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary3 rounded ">
                 <Link
                   href={"https://piaic-q2-project.vercel.app/"}
                   target="_blank"
@@ -75,7 +75,7 @@ const Projects = async () => {
                 </Link>
               </button>
             </div>
-            <div className="sm:w-1/2 mb-10 px-4">
+            <div className="sm:w-1/2 mb-10 px-4 z-10">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Image
                   width={500}
@@ -104,7 +104,7 @@ const Projects = async () => {
                 </Link>
               </button>
             </div>
-            <div className="sm:w-1/2 mb-10 px-4">
+            <div className="sm:w-1/2 mb-10 px-4 z-10">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Image
                   width={500}

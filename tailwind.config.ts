@@ -71,7 +71,7 @@ const config: Config = {
 				xl: '1280px',
 				'2xl': '1536px'
 			},
-			rotate: {
+			rotate360: {
 				'360': '360deg'
 			},
 			animation: {

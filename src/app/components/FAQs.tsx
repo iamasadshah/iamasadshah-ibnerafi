@@ -24,7 +24,11 @@ const FAQs = () => {
       </p>
 
       {/* Accordion with 'collapsible' property */}
-      <Accordion type="single" collapsible className="w-full max-w-md">
+      <Accordion
+        type="single"
+        collapsible
+        className="w-full max-w-md ring-2 ring-black rounded-lg px-10 my-5"
+      >
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-md md:text-lg lg:text-xl">
             What services do you offer?
@@ -47,7 +51,7 @@ const FAQs = () => {
         </AccordionItem>
 
         <AccordionItem value="item-3">
-          <AccordionTrigger className="text-md md:text-lg lg:text-xl">
+          <AccordionTrigger className="text-md md:text-lg lg:text-xl ">
             How can I contact you for a project?
           </AccordionTrigger>
           <AccordionContent>
