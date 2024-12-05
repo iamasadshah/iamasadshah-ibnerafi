@@ -4,12 +4,7 @@ import Link from "next/link";
 
 const Projects = async () => {
   return (
-    <div
-      className="bg-cover bg-center bg-no-repeat py-10 -mt-1 "
-      style={{
-        backgroundImage: "url('/first-bg.svg')", // Replace with your image path
-      }}
-    >
+    <div className="bg-cover bg-center bg-no-repeat py-10 -mt-1 bg-primary2">
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-12 mx-auto">
           <h1 className="text-center font-bold text-4xl text-primary3 pb-10">

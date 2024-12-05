@@ -63,7 +63,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="relative pb-44 overflow-hidden bg-gray-100">
+    <div className="relative pb-44 overflow-hidden bg-primary2">
       <h2 className="text-center text-3xl font-bold text-primary1 my-3">
         I Work With...
       </h2>
@@ -78,7 +78,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center bg-gradient-to-r from-primary3 to-blue-600 rounded-lg p-6 transition-transform duration-300 ease-in-out transform hover:scale-110"
+            className="flex flex-col items-center justify-center bg-primary1 text-white hover:border-2 hover:border-primary3  rounded-lg p-6 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:text-primary3"
           >
             <div className="w-20 h-20 flex justify-center items-center  ">
               <Image
@@ -96,7 +96,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={`duplicate-${index}`}
-            className="flex flex-col items-center justify-center bg-gradient-to-r from-primary3 to-blue-600 rounded-lg p-6 transition-transform duration-300 ease-in-out transform hover:scale-110"
+            className="flex flex-col items-center justify-center bg-primary1 text-white hover:border-2 hover:border-primary3  rounded-lg p-6 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:text-primary3"
           >
             <div className="w-20 h-20 flex justify-center items-center">
               <Image
@@ -107,7 +107,7 @@ const Skills = () => {
                 className="w-16 h-16 object-contain"
               />
             </div>
-            <p className="text-white mt-3 font-semibold">{skill.name}</p>
+            <p className=" mt-3 font-semibold ">{skill.name}</p>
           </div>
         ))}
       </div>

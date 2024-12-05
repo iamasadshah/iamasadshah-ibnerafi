@@ -9,12 +9,7 @@ import Link from "next/link";
 
 const FAQs = () => {
   return (
-    <div
-      className="flex flex-col items-center justify-center h-screen bg-cover bg-center bg-no-repeat px-6 overflow-hidden"
-      style={{
-        backgroundImage: "url('/second-bg.svg')", // Replace with your image path
-      }}
-    >
+    <div className="flex flex-col items-center justify-center h-screen bg-primary2 bg-cover bg-center bg-no-repeat px-6 overflow-hidden">
       <h1 className="text-4xl font-bold text-center text-primary3">
         Frequently Asked Questions
       </h1>
@@ -27,7 +22,7 @@ const FAQs = () => {
       <Accordion
         type="single"
         collapsible
-        className="w-full max-w-md ring-2 ring-black rounded-lg px-10 my-5"
+        className="w-full max-w-md  rounded-lg px-10 my-5"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-md md:text-lg lg:text-xl">
