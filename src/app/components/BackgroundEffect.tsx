@@ -87,7 +87,7 @@ const LineEffect = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-20 z-0"
+      className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-10 z-0"
     ></canvas>
   );
 };
