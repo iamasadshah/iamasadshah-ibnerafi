@@ -10,7 +10,7 @@ import Link from "next/link";
 const FAQs = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-primary2 bg-cover bg-center bg-no-repeat px-6 overflow-hidden">
-      <h1 className="text-4xl font-bold text-center text-primary3">
+      <h1 className="text-4xl font-bold text-center text-primary3 pt-12">
         Frequently Asked Questions
       </h1>
       <p className="text-lg text-center">
@@ -76,7 +76,7 @@ const FAQs = () => {
         </AccordionItem>
       </Accordion>
 
-      <div className="flex flex-col rounded-lg bg-primary2 justify-center items-center px-16 py-6 z-10">
+      <div className="flex flex-col rounded-lg bg-primary2 justify-center items-center px-16 py-6 z-10 pb-12">
         <h1 className="text-2xl font-bold text-center">
           Still have a question?
         </h1>

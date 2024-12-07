@@ -16,7 +16,7 @@ const Services = () => {
 
       <div className="grid grid-cols-1 px-4 gap-4 mt-4 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         {/* Service Cards */}
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
+        <Card className=" bg-primary2 services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="Frontend Development"
             src="/development.png"
@@ -30,7 +30,7 @@ const Services = () => {
             like React and Next.js.
           </p>
         </Card>
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
+        <Card className="bg-primary2 services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="UI/UX Design"
             src="/wordpress.png"
@@ -47,7 +47,7 @@ const Services = () => {
           </p>
         </Card>
 
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
+        <Card className="bg-primary2 services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="SPAs"
             src="/SPA.png"
@@ -64,7 +64,7 @@ const Services = () => {
           </p>
         </Card>
 
-        <Card className="services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
+        <Card className="bg-primary2 services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="SEO Optimization"
             src="/seo.png"
