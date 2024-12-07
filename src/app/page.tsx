@@ -10,15 +10,13 @@ import Skills from "./components/Skills";
 // import CustomCursor from "./components/Customcursor";
 import BackgroundEffect from "./components/BackgroundEffect";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-          rel="stylesheet"
-        />
+        <Link rel="icon" href={"/favicon.png"} />
       </Head>
       <Wrapper>
         {/* <CustomCursor /> */}
