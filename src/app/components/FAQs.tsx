@@ -9,8 +9,8 @@ import Link from "next/link";
 
 const FAQs = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-primary2 bg-cover bg-center bg-no-repeat px-6 overflow-hidden py-40">
-      <h1 className="text-4xl font-bold text-center text-primary3 pt-40">
+    <div className="flex flex-col items-center justify-center h-screen bg-primary2 bg-cover bg-center bg-no-repeat px-6 overflow-hidden">
+      <h1 className="text-4xl font-bold text-center text-primary3 ">
         Frequently Asked Questions
       </h1>
       <p className="text-lg text-center">
@@ -75,18 +75,6 @@ const FAQs = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-
-      <div className="flex flex-col rounded-lg bg-primary2 justify-center items-center px-16 py-6 z-10 pb-32">
-        <h1 className="text-2xl font-bold text-center ">
-          Still have a question?
-        </h1>
-        <p className="text-lg mb-8 text-center">
-          Contact me for more information.
-        </p>
-        <button className="bg-primary1 transition-all duration-300 font-semibold hover:bg-gray-300 hover:text-primary1 hover:ring-2 hover:ring-primary1 hover:scale-105 text-white px-4 py-2 rounded-md">
-          <Link href="/contact">Contact</Link>
-        </button>
-      </div>
     </div>
   );
 };
