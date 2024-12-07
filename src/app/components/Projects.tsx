@@ -133,7 +133,7 @@ const Projects = async () => {
         <div className="flex items-center justify-center">
           <Link
             href="/projects"
-            className="inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white font-bold py-3 px-12 rounded-full shadow-lg hover:from-teal-400 hover:to-blue-500 hover:scale-105 transform transition duration-300"
+            className="inline-block bg-gradient-to-r from-primary1 to-primary3 text-white font-bold py-3 px-12 rounded-full shadow-lg hover:from-primary3 hover:to-primary1 hover:scale-105 transform transition duration-300"
           >
             Discover My Creations
           </Link>
