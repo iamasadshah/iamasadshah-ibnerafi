@@ -74,8 +74,8 @@ const Navbar = () => {
           {/* Hire Me Button */}
           <div>
             <Link href="/contact">
-              <div className="relative inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm shadow-sm font-medium rounded-md shadow-gray-500 text-primary2 bg-primary3 transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:ring-2 hover:ring-primary3">
-                <span className="transition-transform duration-300 ease-in-out transform hover:rotate-360 hover:text-primary3">
+              <div className="relative inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm shadow-sm font-medium rounded-md shadow-gray-500 text-primary2 bg-primary3 transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:ring-2 hover:ring-primary3 hover:shadow-lg hover:shadow-primary1">
+                <span className="transition-transform ease-in-out transform hover:rotate-360 hover:text-primary3">
                   Let&apos;s Connect
                 </span>
               </div>

@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -80,27 +81,26 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="lg:flex lg:pr-6 h-screen Hero-container bg-primary2 relative overflow-hidden pt-20 pb-20 md:pb-0">
+    <div className="lg:flex lg:pr-6 min-h-screen Hero-container bg-primary2 relative overflow-hidden pt-10 md:pt-32 pb-8 md:pb-0">
       {/* Image Section */}
-      <div className="Image-Div flex flex-col justify-center items-center px-4 relative h-[50vh] lg:h-full lg:basis-[60%] order-first lg:order-last ">
-        {/* Hero Image */}
+      <div className="Image-Div flex flex-col justify-center items-center px-4 relative h-[50vh] lg:h-full lg:basis-[60%] order-first lg:order-last">
         <Image
           ref={heroImageRef}
           src="/iamasadshah.png"
           alt="Hero-Image"
           height={400}
           width={400}
-          className="object-contain z-10 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px]  lg:w-[450px] lg:h-[450px] shadow-lg shadow-primary1 rounded-full"
+          className="object-contain z-10 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] lg:w-[450px] lg:h-[450px] shadow-lg shadow-primary1 rounded-full"
         />
       </div>
 
       {/* Text Section */}
       <div
         ref={textRef}
-        className="flex flex-col justify-center  md:pl-14 px-4 h-[50vh] lg:h-full leading-[2.5rem] lg:leading-[3.5rem]"
+        className="flex flex-col justify-center md:pl-14 px-4 h-[50vh] lg:h-full leading-[2.5rem] lg:leading-[3.5rem] md:pt-10"
       >
-        <p className="text-lg sm:text-xl">Hello, My Name is Asad Shah.</p>
-        <h1 className="text-[30px] sm:text-[35px] md:text-[45px] font-semibold leading-9 sm:leading-10 md:leading-[3.5rem]">
+        <p className="text-base sm:text-xl">Hello, My Name is Asad Shah.</p>
+        <h1 className="text-[25px] sm:text-[30px] md:text-[45px] font-semibold leading-8 sm:leading-9 md:leading-[3.5rem]">
           I&apos;m a Professional Software Developer.
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-black lg:pr-52">
@@ -109,14 +109,14 @@ const Hero = () => {
         </p>
 
         {/* Social Icons */}
-        <div className="flex space-x-4 lg:space-x-6 snake-animation pt-6">
+        <div className="flex space-x-3 sm:space-x-4 lg:space-x-6 snake-animation pt-6 justify-center md:justify-start">
           <Link
             href="https://github.com/iamasadshah"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-primary1 hover:bg-white transition duration-500"
           >
-            <FaGithub size={30} className="animate-snake" />
+            <FaGithub size={24} className="animate-snake" />
           </Link>
           <Link
             href="https://www.hackerrank.com/profile/asadibnerafi"
@@ -124,7 +124,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-primary1 hover:bg-[#08EB68] transition duration-500"
           >
-            <FaHackerrank size={30} className="animate-snake delay-100" />
+            <FaHackerrank size={24} className="animate-snake delay-100" />
           </Link>
           <Link
             href="https://www.upwork.com/freelancers/~0151539c3fe76e8c72?mp_source=share"
@@ -132,7 +132,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-primary1 hover:bg-[#14A800] transition duration-500"
           >
-            <FaUpwork size={30} className="animate-snake delay-200" />
+            <FaUpwork size={24} className="animate-snake delay-200" />
           </Link>
           <Link
             href="https://medium.com/@ibnerafi"
@@ -141,7 +141,7 @@ const Hero = () => {
             className="p-2 rounded-full bg-primary1 hover:bg-[#080808] transition duration-500"
           >
             <FaMedium
-              size={30}
+              size={24}
               className="animate-snake delay-300 hover:text-white"
             />
           </Link>
@@ -152,26 +152,27 @@ const Hero = () => {
             className="p-2 rounded-full bg-primary1 hover:bg-[#0A66C2] transition duration-500"
           >
             <FaLinkedin
-              size={30}
+              size={24}
               className="animate-snake delay-400 hover:text-white"
             />
           </Link>
         </div>
 
+        {/* Buttons Section */}
         <div
           ref={buttonsRef}
-          className="flex justify-center items-center space-x-4 mt-4 lg:justify-start pt-6"
+          className="flex sm:flex-row justify-center sm:justify-start items-center gap-y-4 gap-x-4 mt-6"
         >
           {/* Hire Me Button */}
-          <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-white bg-primary1 hover:bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-2 hover:ring-primary3 md:text-lg md:px-10 lg:px-7">
+          <button className="inline-flex items-center px-4 py-2 text-sm sm:px-6 sm:py-3 border border-transparent shadow-md font-medium rounded-md shadow-gray-500 text-white bg-primary1 hover:bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-2 hover:ring-primary3 md:text-lg md:px-4 md:py-2">
             <Link href="/contact">Contact me</Link>
           </button>
 
           {/* Portfolio Button */}
-          <button className="inline-flex items-center px-6 py-2 border border-transparent text-sm shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-primary3 ring-2 ring-primary1 md:text-lg md:px-10 lg:px-7">
+          <button className="inline-flex items-center px-4 py-2 text-sm sm:px-6 sm:py-3 border border-transparent shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-primary3 ring-2 ring-primary1 md:text-lg md:px-4 md:py-2">
             <Link
               href="#"
-              className="relative inline-flex items-center text-lg text-black hover:text-primary3"
+              className="relative inline-flex items-center text-sm md:text-lg text-black hover:text-primary3"
             >
               Get Resume
               <span className="ml-2 inline-block animate-bounce-slow">📥</span>

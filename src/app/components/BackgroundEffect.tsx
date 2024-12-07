@@ -47,7 +47,7 @@ const LineEffect = () => {
 
           if (distance < 120) {
             ctx.beginPath();
-            ctx.strokeStyle = "#56e2db";
+            ctx.strokeStyle = "#606C38";
             ctx.lineWidth = 1;
             ctx.moveTo(particle.x, particle.y);
 
