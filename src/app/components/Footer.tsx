@@ -22,7 +22,12 @@ const Footer = () => {
         >
           ★ Star
         </Link>
-        <Link href={"/"} className="flex text-lg">
+        <Link
+          href={"https://github.com/iamasadshah/iamasadshah-ibnerafi"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex text-lg"
+        >
           <Image src={"/fork.ico"} width={30} height={30} alt="fork" />
           Fork
         </Link>
