@@ -80,9 +80,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="lg:flex lg:pr-6 h-screen Hero-container bg-primary2 relative overflow-hidden md:h-[1050px] lg:h-screen">
+    <div className="lg:flex lg:pr-6 h-screen Hero-container bg-primary2 relative overflow-hidden pt-20 pb-20 md:pb-0">
       {/* Image Section */}
-      <div className="Image-Div flex flex-col justify-center items-center px-4 relative h-[50vh] lg:h-full lg:basis-[60%] order-first lg:order-last py-16 mt-10 md:py-16 ">
+      <div className="Image-Div flex flex-col justify-center items-center px-4 relative h-[50vh] lg:h-full lg:basis-[60%] order-first lg:order-last ">
         {/* Hero Image */}
         <Image
           ref={heroImageRef}

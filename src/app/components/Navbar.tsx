@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiX } from "react-icons/fi";
 import { RiMenu3Fill } from "react-icons/ri";
@@ -8,30 +9,47 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [desktopMenuOpen, setDesktopMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // Link animation variants
-  const linkVariants = {
-    hidden: (direction: string) => ({
-      x: direction === "left" ? -200 : 200,
-      opacity: 0,
-    }),
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Mobile menu animation variants
+  const mobileMenuVariants = {
+    hidden: { y: "100%", opacity: 0 },
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
-    exit: (direction: string) => ({
-      x: direction === "left" ? -200 : 200,
+    exit: {
+      y: "100%",
       opacity: 0,
       transition: { duration: 0.4, ease: "easeIn" },
-    }),
+    },
   };
 
   return (
-    <header>
-      {/* Navbar container */}
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 bg-primary2">
-        <div className="hidden md:flex justify-between items-center py-4 relative">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-primary2/80 backdrop-blur-2xl shadow-lg"
+          : "bg-primary2"
+      }`}
+    >
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Desktop Navbar */}
+        <div className="hidden md:flex justify-between items-center py-4">
           {/* Hamburger Menu Icon */}
           <div className="flex-shrink-0">
             <button
@@ -69,7 +87,7 @@ const Navbar = () => {
         <AnimatePresence>
           {desktopMenuOpen && (
             <motion.div
-              className="fixed inset-0 bg-primary2 bg-opacity-80 backdrop-blur-lg z-50 flex justify-center items-center"
+              className="fixed inset-0 h-screen bg-primary2 bg-opacity-90 backdrop-blur-2xl z-50 flex justify-center items-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -87,35 +105,25 @@ const Navbar = () => {
                 exit="hidden"
               >
                 {[
-                  { href: "/about-me", label: "About Me", direction: "left" },
-                  { href: "/services", label: "Services", direction: "right" },
-                  { href: "/projects", label: "Projects", direction: "left" },
+                  { href: "/about-me", label: "About Me" },
+                  { href: "/services", label: "Services" },
+                  { href: "/projects", label: "Projects" },
                   {
                     href: "https://medium.com/@iamasadshah",
                     label: "Blogs",
-                    direction: "right",
                     external: true,
                   },
                 ].map((link, index) => (
-                  <motion.div
+                  <Link
                     key={index}
-                    variants={linkVariants}
-                    custom={link.direction}
-                    initial="hidden"
-                    animate="visible"
-                    exit="exit"
-                    transition={{ delay: index * 0.2 }}
+                    href={link.href}
+                    onClick={() => setDesktopMenuOpen(false)}
+                    target={link.external ? "_blank" : "_self"}
+                    rel={link.external ? "noopener noreferrer" : undefined}
+                    className="relative group hover:text-primary3"
                   >
-                    <Link
-                      href={link.href}
-                      onClick={() => setDesktopMenuOpen(false)}
-                      target={link.external ? "_blank" : "_self"}
-                      rel={link.external ? "noopener noreferrer" : undefined}
-                      className="relative group hover:text-primary3"
-                    >
-                      {link.label}
-                    </Link>
-                  </motion.div>
+                    {link.label}
+                  </Link>
                 ))}
               </motion.nav>
             </motion.div>
@@ -144,68 +152,60 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu with sliding from bottom to top */}
-        <div
-          className={`md:hidden transition-all duration-700 ease-in-out overflow-hidden bg-primary2 ${
-            menuOpen ? "max-h-screen" : "max-h-0"
-          }`}
-        >
-          <nav className="space-y-4 px-2 pt-2 pb-3">
-            <Link href="/about-me" onClick={() => setMenuOpen(false)}>
-              <div
-                className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
-                  menuOpen ? "translate-x-0" : "-translate-x-full"
-                }`}
-              >
-                About Me
-              </div>
-            </Link>
-            <Link href="/services" onClick={() => setMenuOpen(false)}>
-              <div
-                className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
-                  menuOpen ? "translate-x-0" : "translate-x-full"
-                }`}
-              >
-                Services
-              </div>
-            </Link>
-            <Link href="/projects" onClick={() => setMenuOpen(false)}>
-              <div
-                className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
-                  menuOpen ? "-translate-x-0" : "-translate-x-full"
-                }`}
-              >
-                Projects
-              </div>
-            </Link>
-            <Link
-              href="https://medium.com/@iamasadshah"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.div
+              className="fixed inset-0 h-screen bg-primary2 bg-opacity-90 backdrop-blur-2xl z-50"
+              variants={mobileMenuVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
             >
-              <div
-                className={`block text-gray-900 hover:text-primary1 transform transition duration-700 ${
-                  menuOpen ? "translate-x-0" : "translate-x-full"
-                }`}
+              <button
+                className="absolute top-6 right-6 text-gray-900 focus:outline-none"
+                onClick={() => setMenuOpen(false)}
               >
-                Blogs
+                <FiX size={36} />
+              </button>
+              <motion.nav
+                className="flex flex-col items-center justify-center h-full space-y-6 text-2xl font-semibold"
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+              >
+                {[
+                  { href: "/about-me", label: "About Me" },
+                  { href: "/services", label: "Services" },
+                  { href: "/projects", label: "Projects" },
+                  {
+                    href: "https://medium.com/@iamasadshah",
+                    label: "Blogs",
+                    external: true,
+                  },
+                ].map((link, index) => (
+                  <Link
+                    key={index}
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    target={link.external ? "_blank" : "_self"}
+                    rel={link.external ? "noopener noreferrer" : undefined}
+                    className="relative group hover:text-primary3"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </motion.nav>
+              <div>
+                <Link href="/contact">
+                  <div className="block w-full text-center py-2 px-4 rounded-md bg-primary1 text-white cursor-pointer hover:bg-primary3">
+                    Let&apos;s Connect
+                  </div>
+                </Link>
               </div>
-            </Link>
-          </nav>
-          <div
-            className={`px-2 pb-3 transition duration-700 ${
-              menuOpen ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {/* Hire Me with fade-in effect */}
-            <Link href="/contact" onClick={() => setMenuOpen(false)}>
-              <div className="block w-full text-center py-2 px-4 rounded-md bg-primary1 text-white cursor-pointer">
-                Hire Me
-              </div>
-            </Link>
-          </div>
-        </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );

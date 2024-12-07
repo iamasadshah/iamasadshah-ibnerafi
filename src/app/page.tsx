@@ -7,7 +7,7 @@ import FAQs from "./components/FAQs";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Skills from "./components/Skills";
-import CustomCursor from "./components/Customcursor";
+// import CustomCursor from "./components/Customcursor";
 import BackgroundEffect from "./components/BackgroundEffect";
 import Head from "next/head";
 
@@ -21,7 +21,7 @@ export default function Home() {
         />
       </Head>
       <Wrapper>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
         <BackgroundEffect />
         <Hero />
         <About />
