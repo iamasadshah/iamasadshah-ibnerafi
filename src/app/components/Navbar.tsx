@@ -64,8 +64,8 @@ const Navbar = () => {
           <div className="flex-shrink-0 text-center">
             <Link href="/">
               <div className="flex items-center justify-center cursor-pointer">
-                <span className="ml-2 text-4xl font-bold text-primary3">
-                  IbneRafi.
+                <span className="ml-2 text-4xl font-bold text-primary3 tracking-widest hover:ring-2 hover:ring-primary3 px-7 rounded-lg duration-200">
+                  IBNERAFI.
                 </span>
               </div>
             </Link>

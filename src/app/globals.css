@@ -74,7 +74,7 @@ html::-webkit-scrollbar {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground selection:bg-primary2;
+    @apply bg-background text-foreground selection:bg-primary3 selection:text-primary2;
   }
 }
 

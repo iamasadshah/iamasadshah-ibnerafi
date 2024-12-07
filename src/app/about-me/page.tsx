@@ -11,14 +11,14 @@ const About = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="max-w-4xl w-full bg-white shadow-lg rounded-lg shadow-primary2 p-6 md:p-10"
+        className="max-w-4xl w-full bg-primary3 shadow-lg rounded-2xl shadow-primary2 p-6 md:p-10"
       >
         <div className="text-center">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1, type: "spring", stiffness: 100 }}
-            className="rounded-full w-40 h-40 overflow-hidden mx-auto border-4 border-primary1 "
+            className="rounded-full w-40 h-40 overflow-hidden mx-auto border-4 border-primary2 "
           >
             <Image
               src="/iamasadshah.png"
@@ -28,12 +28,12 @@ const About = () => {
               className="object-cover w-full h-full"
             />
           </motion.div>
-          <h1 className="text-3xl font-bold text-gray-800 mt-4">Asad Shah</h1>
+          <h1 className="text-3xl font-bold text-primary2 mt-4">Asad Shah</h1>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="text-gray-600 mt-2"
+            className="text-primary2 mt-2"
           >
             Passionate Frontend Developer | Creative Problem Solver
           </motion.p>
