@@ -25,8 +25,8 @@ const LineEffect = () => {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5, // Slow down the movement
-        vy: (Math.random() - 0.5) * 0.5, // Slow down the movement
+        vx: (Math.random() - 0.5) * 0.1, // Slow down the movement
+        vy: (Math.random() - 0.5) * 0.1, // Slow down the movement
       });
     }
 

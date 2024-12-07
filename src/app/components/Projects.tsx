@@ -30,7 +30,7 @@ const Projects = async () => {
               <p className="text-gray-700 tracking-widest font-semibold">
                 HTML, TaiwindCSS, TypeScript, React, Next.js, and more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary3 rounded">
+              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
                 <Link
                   href={"https://razer-clone-gold.vercel.app"}
                   target="_blank"
@@ -60,7 +60,7 @@ const Projects = async () => {
                 HTML, TailwindCSS, React, Next.js, TypeScript, Sanity and
                 more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary3 rounded ">
+              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300 ">
                 <Link
                   href={"https://piaic-q2-project.vercel.app/"}
                   target="_blank"
@@ -89,7 +89,7 @@ const Projects = async () => {
               <p className="text-gray-700 tracking-widest font-semibold">
                 HTML, CSS, JavaScript and more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary3 rounded">
+              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
                 <Link
                   href={"https://netflix-clone-frontend-ten.vercel.app/"}
                   target="_blank"
@@ -118,7 +118,7 @@ const Projects = async () => {
               <p className="text-gray-700 tracking-widest font-semibold">
                 HTML, TailwindCSS, React, TypeScript and more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary3 rounded">
+              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
                 <Link
                   href={"https://simple-clock-react.vercel.app/"}
                   target="_blank"
@@ -133,9 +133,9 @@ const Projects = async () => {
         <div className="flex items-center justify-center">
           <Link
             href="/projects"
-            className="inline-block bg-gradient-to-r from-primary1 to-primary3 text-white font-bold py-3 px-12 rounded-full shadow-lg hover:from-primary3 hover:to-primary1 hover:scale-105 transform transition duration-300"
+            className="inline-block bg-primary3 text-white font-bold py-3 px-12 rounded-lg shadow-lg  hover:scale-105 transform transition duration-300 hover:shadow-lg hover:shadow-primary1 hover:bg-primary2 hover:text-primary3"
           >
-            Discover My Creations
+            Discover My Creations &rarr;
           </Link>
         </div>
       </section>
