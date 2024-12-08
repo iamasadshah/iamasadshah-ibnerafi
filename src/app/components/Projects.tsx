@@ -8,7 +8,7 @@ const Projects = async () => {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-12 mx-auto">
           <h1 className="text-center font-bold text-4xl text-primary3 pb-10">
-            Projects
+            PROJECTS
           </h1>
           <div className="flex flex-wrap -mx-4 -mb-10 text-center ">
             <div className="sm:w-1/2 mb-10 px-4 z-10">

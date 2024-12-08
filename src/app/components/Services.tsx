@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 const Services = () => {
   return (
     <div className="py-4 lg:py-10 bg-primary2 justify-center items-center lg:space-y-12 bg-cover bg-center bg-no-repeat z-10">
-      <h1 className="text-2xl lg:text-3xl font-semibold text-center px-4 text-primary3">
-        Take a look at the variety of services I offer.
+      <h1 className="text-2xl lg:text-3xl font-semibold text-center text-primary3 cursor-help">
+        EXPLORE MY SERVICES
       </h1>
 
       <div className="grid grid-cols-1 px-4 gap-4 mt-4 md:grid-cols-2 lg:grid-cols-4 lg:px-8">

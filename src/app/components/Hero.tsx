@@ -1,5 +1,5 @@
 "use client";
-
+import "animate.css";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -99,11 +99,13 @@ const Hero = () => {
         ref={textRef}
         className="flex flex-col justify-center md:pl-14 px-4 h-[50vh] lg:h-full leading-[2.5rem] lg:leading-[3.5rem] md:pt-10"
       >
-        <p className="text-base sm:text-xl">Hello, My Name is Asad Shah.</p>
-        <h1 className="text-[25px] sm:text-[30px] md:text-[45px] font-semibold leading-8 sm:leading-9 md:leading-[3.5rem]">
-          I&apos;m a Professional Software Developer.
+        <p className="text-base sm:text-xl animate__animated animate__flipInX animate__delay-2s">
+          Hello, My Name is Asad Shah.
+        </p>
+        <h1 className="text-[25px] sm:text-[30px] md:text-[45px] font-semibold leading-8 sm:leading-9 md:leading-[3.5rem] animate__animated animate__lightSpeedInLeft animate__delay-1s">
+          I Transform Ideas Into Interactive Realities.
         </h1>
-        <p className="text-sm sm:text-base md:text-lg text-black lg:pr-52">
+        <p className="text-sm sm:text-base md:text-lg text-black lg:pr-52 animate_animated animate__headShake">
           Who said coding can&apos;t be fun? <br /> Let&apos;s build something
           awesome!
         </p>
@@ -175,7 +177,7 @@ const Hero = () => {
               className="relative inline-flex items-center text-sm md:text-lg text-black hover:text-primary3"
             >
               Get Resume
-              <span className="ml-2 inline-block animate-bounce-slow">📥</span>
+              <span className="ml-2 inline-block ">🔗</span>
             </Link>
           </button>
         </div>
