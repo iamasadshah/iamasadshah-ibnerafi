@@ -8,31 +8,42 @@ const Footer = () => {
     <footer className="flex flex-col lg:flex-row items-center justify-between bg-primary2 text-white py-6 px-10 -mt-2 z-10">
       {/* Pages Links */}
       <div>
-        <p className="text-black text-center font-semibold">
+        <p className="text-black text-center font-semibold flex text-lg">
           Made with
-          <span className=" text-red-500 text-2xl animate__animated animate__bounce mx-1">
-            ♥
-          </span>
+          <Image
+            src={"/heart.gif"}
+            width={30}
+            height={30}
+            alt="fork"
+            className="mx-2"
+          />
           and Creativity By Asad Shah.
         </p>
       </div>
 
-      <div className="flex space-x-16 text-black">
+      <div className="flex space-x-16 text-black ">
         <Link
           href={"https://github.com/iamasadshah/iamasadshah-ibnerafi"}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex text-lg"
+          className="flex text-xl"
         >
-          ★ Star
+          <Image
+            src={"/star.gif"}
+            width={30}
+            height={30}
+            alt="star"
+            className="mx-1"
+          />{" "}
+          Star
         </Link>
         <Link
           href={"https://github.com/iamasadshah/iamasadshah-ibnerafi"}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex text-lg"
+          className="flex text-xl"
         >
-          <Image src={"/fork.ico"} width={30} height={30} alt="fork" />
+          <Image src={"/fork.gif"} width={30} height={30} alt="fork" />
           Fork
         </Link>
       </div>

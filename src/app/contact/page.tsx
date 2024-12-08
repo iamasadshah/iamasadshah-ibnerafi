@@ -67,7 +67,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="Enter your name"
-            className="w-full p-3 bg-primary2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white placeholder:text-white"
+            className="w-full p-3 bg-primary2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary3 placeholder:text-primary3"
           />
         </motion.div>
 
@@ -89,7 +89,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="Enter your email"
-            className="w-full p-3 bg-primary2 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white placeholder:text-white"
+            className="w-full p-3 bg-primary2 text-primary3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary3 placeholder:text-primary3"
           />
         </motion.div>
 
@@ -114,7 +114,7 @@ const Contact = () => {
             required
             rows={5}
             placeholder="Enter your message"
-            className="w-full p-3 bg-primary2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white placeholder:text-white"
+            className="w-full p-3 bg-primary2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary3 placeholder:text-primary3"
           ></textarea>
         </motion.div>
 
@@ -122,7 +122,7 @@ const Contact = () => {
         <motion.button
           whileHover={{ scale: 0.9 }}
           whileTap={{ scale: 0.8 }}
-          className="w-full bg-primary1 text-white py-3 ring-2 ring-primary2 rounded-full font-medium shadow-md shadow-primary2 hover:shadow-primary3 hover:bg-primary2 focus:outline-none focus:ring-2 focus:ring-primary1"
+          className="w-full bg-primary1 text-white py-3 ring-2 ring-primary2 rounded-full font-medium shadow-md shadow-primary2 hover:shadow-primary3 hover:bg-primary2 focus:outline-none focus:ring-2 focus:ring-primary2 hover:text-primary3 focus:bg-primary3 focus:text-primary2"
           type="submit"
         >
           Send Message
