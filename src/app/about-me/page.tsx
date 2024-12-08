@@ -175,9 +175,9 @@ const About = () => {
           Hobbies
         </h2>
         <p className="text-gray-700 mt-4 leading-7">
-          I love playing football, and when I'm not on the field, you can find
-          me at the fishing point, enjoying some quiet time by the water. I also
-          enjoy playing Carrom board during leisure time with friends and
+          I love playing football, and when I&apos;m not on the field, you can
+          find me at the fishing point, enjoying some quiet time by the water. I
+          also enjoy playing Carrom board during leisure time with friends and
           family.
         </p>
       </motion.section>
@@ -201,7 +201,9 @@ const About = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img
+              <Image
+                width={500}
+                height={500}
                 alt="gallery"
                 className="w-full object-cover h-full object-center block transition-all duration-300"
                 src="/certificates/htmlcssandreact.jpg"
@@ -215,7 +217,9 @@ const About = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img
+              <Image
+                width={500}
+                height={500}
                 alt="gallery"
                 className="w-full object-cover h-full object-center block transition-all duration-300"
                 src="/certificates/webdevelopmentfull.jpg"
@@ -229,7 +233,9 @@ const About = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img
+              <Image
+                width={500}
+                height={500}
                 alt="gallery"
                 className="w-full h-full object-cover object-center block transition-all duration-300"
                 src="/certificates/javascript.jpg"
