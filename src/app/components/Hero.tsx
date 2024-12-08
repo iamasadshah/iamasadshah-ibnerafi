@@ -173,7 +173,9 @@ const Hero = () => {
           {/* Portfolio Button */}
           <button className="inline-flex items-center px-4 py-2 text-sm sm:px-6 sm:py-3 border border-transparent shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-primary3 ring-2 ring-primary1 md:text-lg md:px-4 md:py-2">
             <Link
-              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1T3Ft8e9Y-d5mEJskaCsIPPLS3hbrAanW/view?usp=sharing"
               className="relative inline-flex items-center text-sm md:text-lg text-black hover:text-primary3"
             >
               Get Resume
