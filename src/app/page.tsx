@@ -7,8 +7,6 @@ import FAQs from "./components/FAQs";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Skills from "./components/Skills";
-// import CustomCursor from "./components/Customcursor";
-import BackgroundEffect from "./components/BackgroundEffect";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -19,8 +17,6 @@ export default function Home() {
         <Link rel="icon" href={"/favicon.png"} />
       </Head>
       <Wrapper>
-        {/* <CustomCursor /> */}
-        <BackgroundEffect />
         <Hero />
         <About />
         <Projects />

@@ -43,7 +43,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-primary2/80 backdrop-blur-2xl shadow-lg"
+          ? "bg-primary2/80 backdrop-blur-md shadow-md shadow-primary1"
           : "bg-primary2"
       }`}
     >
@@ -93,7 +93,7 @@ const Navbar = () => {
               exit={{ opacity: 0 }}
             >
               <button
-                className="absolute top-6 right-6 text-gray-900 focus:outline-none"
+                className="absolute top-4 left-6 text-gray-900 focus:outline-none"
                 onClick={() => setDesktopMenuOpen(false)}
               >
                 <FiX size={36} />
@@ -156,7 +156,7 @@ const Navbar = () => {
         <AnimatePresence>
           {menuOpen && (
             <motion.div
-              className="fixed inset-0 h-screen bg-primary2 bg-opacity-90 backdrop-blur-2xl z-50"
+              className="fixed inset-0 h-screen bg-primary2 bg-opacity-90 backdrop-blur-md z-50"
               variants={mobileMenuVariants}
               initial="hidden"
               animate="visible"
