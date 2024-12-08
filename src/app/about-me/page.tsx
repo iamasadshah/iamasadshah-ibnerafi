@@ -1,9 +1,20 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Confetti from "react-confetti";
 
 const About = () => {
+  const [showConfetti, setShowConfetti] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowConfetti(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowConfetti(false);
+  };
   return (
     <div className="min-h-screen bg-primary2 flex flex-col items-center justify-center px-4 py-20">
       {/* Header Section */}
@@ -57,6 +68,41 @@ const About = () => {
           how websites work and has turned into a passion for creating scalable
           and user-friendly applications.
         </p>
+      </motion.section>
+      {/* Education Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="max-w-4xl w-full mt-8"
+      >
+        <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-primary1 pb-2">
+          Education
+        </h2>
+        <ul className="list-disc list-inside mt-4 space-y-3">
+          <li className="text-gray-700">
+            Matriculation: Completed with 85% during pre-Covid19 times.
+          </li>
+          <li className="text-gray-700">
+            FSc: Passed with 59%, faced challenges due to the Covid19 pandemic
+            and college closures, resulting in limited study opportunities.
+          </li>
+          <li className="text-gray-700">
+            Currently pursuing a BSc in Computer Science from Agriculture
+            University Peshawar.
+          </li>
+          <li className="text-gray-700">
+            Actively learning Agentic AI at{" "}
+            <Link
+              href={"https://github.com/panaversity"}
+              className="text-primary3 underline"
+            >
+              Panaversity
+            </Link>{" "}
+            to enhance future career prospects.
+          </li>
+        </ul>
       </motion.section>
 
       {/* Skills Section */}
@@ -129,10 +175,69 @@ const About = () => {
           Hobbies
         </h2>
         <p className="text-gray-700 mt-4 leading-7">
-          When I am not coding, you can find me exploring new tech trends,
-          reading books on personal growth, or experimenting with new UI/UX
-          design ideas.
+          I love playing football, and when I'm not on the field, you can find
+          me at the fishing point, enjoying some quiet time by the water. I also
+          enjoy playing Carrom board during leisure time with friends and
+          family.
         </p>
+      </motion.section>
+
+      {/* Certificate */}
+      <motion.section
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="max-w-4xl w-full mt-8 mb-8"
+      >
+        <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-primary1 pb-2">
+          Certificates
+        </h2>
+        <section className="text-gray-600 body-font">
+          <div className="container px-5 py-5 mx-auto flex flex-wrap">
+            {/* Certificate 1 */}
+            <div
+              className="md:p-2 p-1 w-1/2 shadow-md shadow-primary1 relative group"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img
+                alt="gallery"
+                className="w-full object-cover h-full object-center block transition-all duration-300"
+                src="/certificates/htmlcssandreact.jpg"
+              />
+              {showConfetti && <Confetti />}
+            </div>
+
+            {/* Certificate 2 */}
+            <div
+              className="md:p-2 p-1 w-1/2 shadow-md shadow-primary1 relative group"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img
+                alt="gallery"
+                className="w-full object-cover h-full object-center block transition-all duration-300"
+                src="/certificates/webdevelopmentfull.jpg"
+              />
+              {showConfetti && <Confetti />}
+            </div>
+
+            {/* Certificate 3 */}
+            <div
+              className="md:p-2 p-1 w-full shadow-md shadow-primary1 relative group"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img
+                alt="gallery"
+                className="w-full h-full object-cover object-center block transition-all duration-300"
+                src="/certificates/javascript.jpg"
+              />
+              {showConfetti && <Confetti />}
+            </div>
+          </div>
+        </section>
       </motion.section>
     </div>
   );

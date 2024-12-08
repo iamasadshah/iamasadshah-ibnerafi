@@ -75,7 +75,7 @@ const About = () => {
         <p className="text-xl font-semibold text-primary3">WHO AM I?</p>
         <div>
           <p className="text-sm lg:text-lg font-semibold">
-            Hi, I&apos;m Asad Shah Ibne Rafi, a passionate and dedicated
+            Hi, I&apos;m Asadullah Shah Ibne Rafi, a passionate and dedicated
             developer. I enjoy learning and growing every day, especially when
             it comes to exploring new technologies. Problem-solving excites me,
             and I love creating web applications that make the internet more
@@ -94,21 +94,21 @@ const About = () => {
         {/* Cards Section */}
         <div className="card-div flex flex-col lg:flex-row lg:space-x-4 text-primary3">
           <div className="cards">
-            <h4 className="text-xl font-bold">100+</h4>
-            <p>Project completed</p>
+            <h4 className="text-xl font-bold">100%</h4>
+            <p>on Time</p>
           </div>
           <div className="cards">
-            <h4 className="text-xl font-bold">98+</h4>
-            <p>Clients Satisfied</p>
+            <h4 className="text-xl font-bold">99%</h4>
+            <p>Clients Satisfaction rate</p>
           </div>
           <div className="cards">
             <h4 className="text-xl font-bold">80%</h4>
-            <p>Nextjs Projects</p>
+            <p>Web Projects</p>
           </div>
         </div>
 
         {/* Button Section */}
-        <button className="flex items-center px-6 py-2 justify-center text-center border border-transparent text-sm shadow-md font-medium rounded-md text-white bg-primary3 transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-500 md:text-lg md:px-10 lg:px-7">
+        <button className="flex items-center px-12 py-2 justify-center text-center border border-transparent text-sm shadow-md  font-semibold rounded-md text-white bg-primary3 transition-all duration-300 ease-in-out hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3   hover:scale-105 transform">
           <Link href="/about-me">About me</Link>
         </button>
       </div>
