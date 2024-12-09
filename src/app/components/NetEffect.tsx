@@ -28,7 +28,7 @@ const NetEffect = () => {
 
     // Determine particle speed based on screen size
     const isMobile = window.innerWidth < 768;
-    const speedFactor = isMobile ? 1 : 5; // Slower speed for mobile
+    const speedFactor = isMobile ? 1 : 1; // Slower speed for mobile
 
     // Initialize particles
     for (let i = 0; i < particleCount; i++) {

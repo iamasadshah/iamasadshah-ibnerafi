@@ -81,7 +81,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="lg:flex lg:pr-6 min-h-screen bg-primary2 Hero-container relative overflow-hidden pt-10 md:pt-32 pb-8 md:pb-0 -z-10">
+    <div className="lg:flex lg:pr-6 min-h-screen Hero-container relative overflow-hidden pt-10 md:pt-32 pb-8 md:pb-0 ">
       {/* Image Section */}
       <div className="Image-Div flex flex-col justify-center items-center px-4 relative h-[50vh] lg:h-full lg:basis-[60%] order-first lg:order-last p-0">
         <Image
@@ -90,7 +90,7 @@ const Hero = () => {
           alt="Hero-Image"
           height={400}
           width={400}
-          className="object-contain z-10 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] lg:w-[450px] lg:h-[450px] shadow-lg shadow-primary1 rounded-full"
+          className="object-contain z-50 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] lg:w-[450px] lg:h-[450px] shadow-lg shadow-primary1 rounded-full"
         />
       </div>
 
@@ -171,7 +171,7 @@ const Hero = () => {
           </button>
 
           {/* Portfolio Button */}
-          <button className="inline-flex items-center px-4 py-2 text-sm sm:px-6 sm:py-3 border border-transparent shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-primary3 ring-2 ring-primary1 md:text-lg md:px-4 md:py-2">
+          <button className="inline-flex items-center px-4 py-2 text-sm sm:px-6 sm:py-3 border border-transparent shadow-md font-medium rounded-md shadow-gray-500 text-primary1 bg-transparent cursor-pointer transition-all duration-300 hover:text-primary3 hover:ring-primary3 ring-2 ring-primary1 md:text-lg md:px-4 md:py-2 group">
             <Link
               target="_blank"
               rel="noopener noreferrer"
@@ -179,7 +179,15 @@ const Hero = () => {
               className="relative inline-flex items-center text-sm md:text-lg text-black hover:text-primary3"
             >
               Get Resume
-              <span className="ml-2 inline-block ">🔗</span>
+              <span className="ml-2 inline-block ">
+                <Image
+                  src={"/link.gif"}
+                  width={200}
+                  height={200}
+                  alt="link"
+                  className="h-6 w-6"
+                />
+              </span>
             </Link>
           </button>
         </div>
