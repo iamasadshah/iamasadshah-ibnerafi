@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -122,10 +123,17 @@ const Contact = () => {
         <motion.button
           whileHover={{ scale: 0.9 }}
           whileTap={{ scale: 0.8 }}
-          className="w-full bg-primary1 text-white py-3 ring-2 ring-primary2 rounded-full font-medium shadow-md shadow-primary2 hover:shadow-primary3 hover:bg-primary2 focus:outline-none focus:ring-2 focus:ring-primary2 hover:text-primary3 focus:bg-primary3 focus:text-primary2"
+          className="w-full group bg-primary1 text-white ring-2 ring-primary2 rounded-full font-medium shadow-md shadow-primary2 hover:shadow-primary3 hover:bg-primary2 focus:outline-none focus:ring-2 focus:ring-primary2 hover:text-primary3 focus:bg-primary3 focus:text-primary2"
           type="submit"
         >
-          Send Message
+          Send Message{" "}
+          <Image
+            src="/email-icon.gif"
+            alt="email-icon"
+            width={100}
+            height={100}
+            className="w-12 h-12 inline-block ml-2 opacity-0 group-hover:opacity-100"
+          />
         </motion.button>
       </motion.form>
 
