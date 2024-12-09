@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-primary2 flex flex-col items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-primary2 flex flex-col items-center justify-center px-4 py-24">
       {/* Header Section */}
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
