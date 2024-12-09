@@ -108,7 +108,7 @@ const NetEffect = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-35 md:opacity-60 z-0"
+      className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-30 md:opacity-30 z-0"
     ></canvas>
   );
 };
