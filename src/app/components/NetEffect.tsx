@@ -26,13 +26,17 @@ const NetEffect = () => {
 
     const particleCount = 50;
 
+    // Determine particle speed based on screen size
+    const isMobile = window.innerWidth < 768;
+    const speedFactor = isMobile ? 1 : 5; // Slower speed for mobile
+
     // Initialize particles
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 5,
-        vy: (Math.random() - 0.5) * 5,
+        vx: (Math.random() - 0.5) * speedFactor,
+        vy: (Math.random() - 0.5) * speedFactor,
       });
     }
 
@@ -84,8 +88,8 @@ const NetEffect = () => {
       // Create a gentle attraction to the mouse
       gsap.to(particles, {
         duration: 1,
-        x: (i) => particles[i].x + (mouse.x - particles[i].x) * 5,
-        y: (i) => particles[i].y + (mouse.y - particles[i].y) * 5,
+        x: (i) => particles[i].x + (mouse.x - particles[i].x) * 7,
+        y: (i) => particles[i].y + (mouse.y - particles[i].y) * 7,
         ease: "power1.out",
       });
     };
@@ -104,7 +108,7 @@ const NetEffect = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-50 z-0"
+      className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-35 md:opacity-60 z-0"
     ></canvas>
   );
 };
