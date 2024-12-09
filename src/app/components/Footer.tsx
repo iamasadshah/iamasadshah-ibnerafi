@@ -5,17 +5,17 @@ import "animate.css";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col lg:flex-row items-center justify-between bg-primary2 text-white py-6 px-10 -mt-2 z-10">
+    <footer className="flex flex-col space-y-6 lg:flex-row items-center justify-between bg-primary2 text-white py-6 px-10 -mt-2 z-10 lg:space-y-0">
       {/* Pages Links */}
       <div>
-        <p className="text-black text-center font-semibold flex text-lg">
+        <p className="text-black text-center font-semibold flex text-base md:text-lg">
           Made with
           <Image
             src={"/heart.gif"}
             width={30}
             height={30}
             alt="fork"
-            className="mx-2"
+            className="mx-2 h-6 w-6 "
           />
           and Creativity By Asad Shah.
         </p>
