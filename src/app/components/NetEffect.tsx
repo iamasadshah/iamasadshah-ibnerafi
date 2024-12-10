@@ -108,7 +108,7 @@ const NetEffect = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full hidden lg:block  blur-[0.5px] pointer-events-none  opacity-90 z-0"
+      className="fixed top-0 left-0 w-full h-full hidden lg:block  blur-[0.1px] pointer-events-none  opacity-90 z-0"
     ></canvas>
   );
 };
