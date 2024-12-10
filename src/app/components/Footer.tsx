@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="flex flex-col space-y-6 lg:flex-row items-center justify-between bg-primary2 text-white py-6 px-10 -mt-2 z-10 lg:space-y-0">
       {/* Pages Links */}
       <div>
-        <p className="text-black text-center font-semibold flex text-base md:text-lg">
+        <p className="text-black text-center flex text-sm md:text-lg md:font-semibold">
           Made with
           <Image
             src={"/heart.gif"}
