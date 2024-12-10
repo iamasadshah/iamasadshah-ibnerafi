@@ -90,7 +90,7 @@ const Hero = () => {
           alt="Hero-Image"
           height={400}
           width={400}
-          className="object-contain z-50 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] lg:w-[450px] lg:h-[450px] shadow-lg shadow-primary1 rounded-full"
+          className="object-contain z-10 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] lg:w-[450px] lg:h-[450px] shadow-lg shadow-primary1 rounded-full"
         />
       </div>
 
@@ -184,6 +184,7 @@ const Hero = () => {
                   src={"/link.gif"}
                   width={200}
                   height={200}
+                  unoptimized
                   alt="link"
                   className="h-6 w-6"
                 />

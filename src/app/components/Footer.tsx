@@ -13,6 +13,7 @@ const Footer = () => {
           <Image
             src={"/heart.gif"}
             width={30}
+            unoptimized
             height={30}
             alt="fork"
             className="mx-2 h-6 w-6 "
@@ -32,6 +33,7 @@ const Footer = () => {
             src={"/star.gif"}
             width={30}
             height={30}
+            unoptimized
             alt="star"
             className="mx-1"
           />{" "}
@@ -43,7 +45,13 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="flex text-xl"
         >
-          <Image src={"/fork.gif"} width={30} height={30} alt="fork" />
+          <Image
+            src={"/fork.gif"}
+            width={30}
+            height={30}
+            unoptimized
+            alt="fork"
+          />
           Fork
         </Link>
       </div>
