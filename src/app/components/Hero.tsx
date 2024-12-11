@@ -97,7 +97,7 @@ const Hero = () => {
       {/* Text Section */}
       <div
         ref={textRef}
-        className="flex flex-col justify-center md:pl-14 px-4 h-[50vh] lg:h-full leading-[2.5rem] lg:leading-[3.5rem] md:pt-10"
+        className="flex flex-col justify-center md:pl-14 px-4 h-[50vh] lg:h-full leading-[2.5rem] lg:leading-[3.5rem] lg:pt-10 md:-mt-16 lg:m-0"
       >
         <p className="text-base sm:text-xl animate__animated animate__flipInX animate__delay-2s">
           Hello, My Name is Asad Shah.

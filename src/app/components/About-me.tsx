@@ -108,7 +108,7 @@ const About = () => {
         </div>
 
         {/* Button Section */}
-        <button className="flex items-center px-12 py-2 justify-center text-center border border-transparent text-sm shadow-md  font-semibold rounded-md text-white bg-primary3 transition-all duration-300 ease-in-out hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3   hover:scale-105 transform">
+        <button className="flex items-center px-12 py-2 justify-center text-center border border-transparent text-sm shadow-md font-semibold rounded-md text-white bg-primary3 transition-all duration-300 ease-in-out md:hover:scale-100 hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3   hover:scale-105 transform">
           <Link href="/about-me">About me</Link>
         </button>
       </div>
