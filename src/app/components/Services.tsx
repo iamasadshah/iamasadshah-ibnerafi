@@ -72,7 +72,7 @@ const Services = () => {
             height={80}
             className="hover:scale-110 transition-transform duration-300"
           />
-          <h3 className="text-lg lg:text-xl font-bold">SEO Optimization</h3>
+          <h3 className="text-lg lg:text-xl font-bold">SEO</h3>
           <p className="text-sm lg:text-base">
             Best practices for better search engine rankings and site
             performance.
