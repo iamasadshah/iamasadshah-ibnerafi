@@ -40,7 +40,7 @@ const Projects = async () => {
                     Live Demo &#9788;
                   </Link>
                 </button>
-                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                <button className="flex  mt-2 md:mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
                   <Link
                     href={"https://github.com/iamasadshah/razer-clone"}
                     target="_blank"
@@ -81,7 +81,7 @@ const Projects = async () => {
                     Live Demo &#9788;
                   </Link>
                 </button>
-                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                <button className="flex  mt-2 md:mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
                   <Link
                     href={"https://github.com/iamasadshah/piaic-q2-project"}
                     target="_blank"
@@ -121,7 +121,7 @@ const Projects = async () => {
                     Live Demo &#9788;
                   </Link>
                 </button>
-                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                <button className="flex  mt-2 md:mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
                   <Link
                     href={
                       "https://github.com/iamasadshah/netflix-clone-frontend"
@@ -151,7 +151,7 @@ const Projects = async () => {
                 Tech Stack Used:
               </h2>
               <p className="text-gray-700 tracking-widest font-semibold">
-                HTML, TailwindCSS, React, TypeScript and more...
+                HTML, TailwindCSS, React, TypeScript
               </p>
               <div className="flex flex-col md:flex-row justify-center items-center md:gap-x-5">
                 <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
@@ -163,7 +163,7 @@ const Projects = async () => {
                     Live Demo &#9788;
                   </Link>
                 </button>
-                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                <button className="flex mt-2 md:mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
                   <Link
                     href={"https://github.com/iamasadshah/simple-clock-react"}
                     target="_blank"
