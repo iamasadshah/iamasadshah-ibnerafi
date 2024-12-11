@@ -40,7 +40,7 @@ const Footer = () => {
           Star
         </Link>
         <Link
-          href={"https://github.com/iamasadshah/iamasadshah-ibnerafi"}
+          href={"https://github.com/iamasadshah/iamasadshah-ibnerafi/fork"}
           target="_blank"
           rel="noopener noreferrer"
           className="flex text-xl"

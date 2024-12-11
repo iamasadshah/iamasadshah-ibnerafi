@@ -30,15 +30,26 @@ const Projects = async () => {
               <p className="text-gray-700 tracking-widest font-semibold">
                 HTML, TaiwindCSS, TypeScript, React, Next.js, and more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
-                <Link
-                  href={"https://razer-clone-gold.vercel.app"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Project &rarr;
-                </Link>
-              </button>
+              <div className="flex flex-col md:flex-row justify-center items-center md:gap-x-5">
+                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                  <Link
+                    href={"https://razer-clone-gold.vercel.app"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo &#9788;
+                  </Link>
+                </button>
+                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                  <Link
+                    href={"https://github.com/iamasadshah/razer-clone"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    &#10100; Code &#10101;
+                  </Link>
+                </button>
+              </div>
             </div>
             <div className="sm:w-1/2 mb-10 px-4 z-10">
               <div className="rounded-lg h-64 overflow-hidden">
@@ -60,15 +71,26 @@ const Projects = async () => {
                 HTML, TailwindCSS, React, Next.js, TypeScript, Sanity and
                 more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300 ">
-                <Link
-                  href={"https://piaic-q2-project.vercel.app/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Project &rarr;
-                </Link>
-              </button>
+              <div className="flex flex-col md:flex-row justify-center items-center md:gap-x-5">
+                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                  <Link
+                    href={"https://piaic-q2-project.vercel.app/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo &#9788;
+                  </Link>
+                </button>
+                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                  <Link
+                    href={"https://github.com/iamasadshah/piaic-q2-project"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    &#10100; Code &#10101;
+                  </Link>
+                </button>
+              </div>
             </div>
             <div className="sm:w-1/2 mb-10 px-4 z-10">
               <div className="rounded-lg h-64 overflow-hidden">
@@ -89,15 +111,28 @@ const Projects = async () => {
               <p className="text-gray-700 tracking-widest font-semibold">
                 HTML, CSS, JavaScript and more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
-                <Link
-                  href={"https://netflix-clone-frontend-ten.vercel.app/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Project &rarr;
-                </Link>
-              </button>
+              <div className="flex flex-col md:flex-row justify-center items-center md:gap-x-5">
+                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                  <Link
+                    href={"https://netflix-clone-frontend-ten.vercel.app/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo &#9788;
+                  </Link>
+                </button>
+                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                  <Link
+                    href={
+                      "https://github.com/iamasadshah/netflix-clone-frontend"
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    &#10100; Code &#10101;
+                  </Link>
+                </button>
+              </div>
             </div>
             <div className="sm:w-1/2 mb-10 px-4 z-10">
               <div className="rounded-lg h-64 overflow-hidden">
@@ -118,15 +153,26 @@ const Projects = async () => {
               <p className="text-gray-700 tracking-widest font-semibold">
                 HTML, TailwindCSS, React, TypeScript and more...
               </p>
-              <button className="flex mx-auto mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
-                <Link
-                  href={"https://simple-clock-react.vercel.app/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Project &rarr;
-                </Link>
-              </button>
+              <div className="flex flex-col md:flex-row justify-center items-center md:gap-x-5">
+                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                  <Link
+                    href={"https://simple-clock-react.vercel.app/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo &#9788;
+                  </Link>
+                </button>
+                <button className="flex  mt-6 text-white bg-primary1 border-0 py-2 px-5 focus:outline-none hover:bg-primary2 hover:text-primary3 hover:shadow-lg hover:shadow-primary3 hover:ring-2 hover:ring-primary3  rounded hover:scale-105 transform transition duration-300">
+                  <Link
+                    href={"https://github.com/iamasadshah/simple-clock-react"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    &#10100; Code &#10101;
+                  </Link>
+                </button>
+              </div>
             </div>
           </div>
         </div>
