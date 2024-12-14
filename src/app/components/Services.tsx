@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { gsap } from "gsap";
@@ -8,15 +9,47 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
+  const cardsRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const cards = cardsRef.current?.querySelectorAll(".services-card");
+
+    if (cards) {
+      gsap.fromTo(
+        cards,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.5,
+          stagger: 0.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: cardsRef.current,
+            start: "top 80%",
+            end: "top 30%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    }
+  }, []);
+
   return (
-    <div className="py-4 lg:py-10 bg-primary2 justify-center items-center lg:space-y-12 bg-cover bg-center bg-no-repeat z-10">
+    <div
+      ref={cardsRef}
+      className="py-4 lg:py-10 bg-primary2 justify-center items-center lg:space-y-12 bg-cover bg-center bg-no-repeat z-10"
+    >
       <h1 className="text-2xl lg:text-3xl font-semibold text-center text-primary3 cursor-help">
         EXPLORE MY SERVICES
       </h1>
 
       <div className="grid grid-cols-1 px-4 gap-4 mt-4 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         {/* Service Cards */}
-        <Card className=" bg-primary2 services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
+        <Card className="services-card bg-primary2 flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="Frontend Development"
             src="/development.png"
@@ -30,7 +63,7 @@ const Services = () => {
             like React and Next.js.
           </p>
         </Card>
-        <Card className="bg-primary2 services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
+        <Card className="services-card bg-primary2 flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="UI/UX Design"
             src="/wordpress.png"
@@ -47,7 +80,7 @@ const Services = () => {
           </p>
         </Card>
 
-        <Card className="bg-primary2 services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
+        <Card className="services-card bg-primary2 flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="SPAs"
             src="/SPA.png"
@@ -64,7 +97,7 @@ const Services = () => {
           </p>
         </Card>
 
-        <Card className="bg-primary2 services-card flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
+        <Card className="services-card bg-primary2 flex flex-col justify-center items-center py-4 space-y-2 px-4 text-center z-10">
           <Image
             alt="SEO Optimization"
             src="/seo.png"
